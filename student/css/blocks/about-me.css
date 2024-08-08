@@ -1,0 +1,4 @@
+.about-me__container {
+    display: flex;
+    justify-content: space-between;
+}
