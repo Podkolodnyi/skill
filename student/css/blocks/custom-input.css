@@ -11,10 +11,17 @@
   font-family: inherit;
   padding: 0 32px 12px 0;
   font-size: 18px;
-  line-height: 1.2;
   border-bottom: 1px solid #CACACA;
+  font-family: Unbounded;
+  line-height: 21.6px;
 }
 
 .custom-input__field::placeholder {
   color: #9B9B9B;
+}
+
+.custom-input__mail-logo {
+  position: absolute;
+  bottom: 12px;
+  left: 480px;
 }

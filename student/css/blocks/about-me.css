@@ -1,4 +1,23 @@
 .about-me__container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.custom-input__name {
+    margin: 60px 0 0;
+}
+
+.custom-input__contacts{
+    margin: 42px 0 0;
+    position: relative;
+}
+
+.about-me__contacts label {
+    color: #1919EF;
+    font-family: Unbounded;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    text-align: left;
 }

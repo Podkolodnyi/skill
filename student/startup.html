@@ -73,29 +73,41 @@
             </p>
             <!-- Форма -->
              <form class="about-me__group" action="#" method="post">
-             <fieldset class="about-me__group">
-              <legend class="about-me__group-name">Расскажи о себе</legend>
+             <fieldset class="about-me__field">
+              <legend class="about-me__field-name">Расскажи о себе</legend>
               <div class="about-me__container">
                 <div class="about-me__name">
-            <div class="custom-input">
+            <div class="custom-input custom-input__name">
               <input class="custom-input__field" type="text" name="surname" placeholder="Фамилия*" aria-label="Фамилия" required>
             </div>
-            <div class="custom-input">
+            <div class="custom-input custom-input__name">
               <input class="custom-input__field" type="text" name="name" placeholder="Имя*" aria-label="Имя" required>
             </div>
-            <div class="custom-input">
+            <div class="custom-input custom-input__name">
               <input class="custom-input__field" type="text" name="patronymic" placeholder="Отчество*" aria-label="Отчество" required>
             </div>
           </div>
             <div class="about-me__contacts">
-              <div class="custom-input">
-                <input class="custom-input__field" type="text" name="surname" placeholder="Фамилия*" aria-label="Фамилия" required>
+                <div class="custom-input custom-input__contacts">
+                <label for="E-mail">Почта*</label>
+                <input class="custom-input__field custom-input__email" type="text" name="Почта*" placeholder="E-mail*" aria-label="Почта" id="E-mail" required>
+                <svg class="custom-input__mail-logo" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#logo-mail"></use>
+                </svg>
               </div>
-              <div class="custom-input">
-                <input class="custom-input__field" type="text" name="name" placeholder="Имя*" aria-label="Имя" required>
+              <div class="custom-input custom-input__contacts">
+                <label for="date">Дата рождения*</label>
+                <input class="custom-input__field" type="text" name="Дата рождения" placeholder="dd/mm/yyyy*" aria-label="Дата рождения" id="date" required>
+                <svg class="custom-input__mail-logo" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#logo-date"></use>
+                </svg>
               </div>
-              <div class="custom-input">
-                <input class="custom-input__field" type="text" name="patronymic" placeholder="Отчество*" aria-label="Отчество" required>
+              <div class="custom-input custom-input__contacts">
+                <label for="phone">Телефон*</label>
+                <input class="custom-input__field" type="text" name="Телефон" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" aria-label="Телефон" id="phone" required>
+                <svg class="custom-input__mail-logo" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#phone"></use>
+                </svg>
               </div>
             </div>
           </div>
