@@ -5,3 +5,9 @@
 .project-link__field {
     margin: 0 0 40px;
 }
+
+.custom-input__project-link {
+    position: absolute;
+    right: 0;
+    bottom: 12px;
+}
