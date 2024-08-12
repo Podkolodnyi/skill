@@ -1,16 +1,26 @@
+.about-me__field {
+    margin: 0 0 40px;
+}
+
 .about-me__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
 }
 
-.custom-input__name {
+.about-me__name .custom-input {
     margin: 60px 0 0;
+    height: 34px;
 }
 
-.custom-input__contacts{
+.about-me__contacts .custom-input {
     margin: 42px 0 0;
     position: relative;
+    height: 52px;
+}
+
+.about-me__contacts .custom-input .custom-input__field {
+    padding: 4px 32px 12px 0;
 }
 
 .about-me__contacts label {

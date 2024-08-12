@@ -77,40 +77,63 @@
               <legend class="about-me__field-name">Расскажи о себе</legend>
               <div class="about-me__container">
                 <div class="about-me__name">
-            <div class="custom-input custom-input__name">
+            <div class="custom-input">
               <input class="custom-input__field" type="text" name="surname" placeholder="Фамилия*" aria-label="Фамилия" required>
             </div>
-            <div class="custom-input custom-input__name">
+            <div class="custom-input">
               <input class="custom-input__field" type="text" name="name" placeholder="Имя*" aria-label="Имя" required>
             </div>
-            <div class="custom-input custom-input__name">
+            <div class="custom-input">
               <input class="custom-input__field" type="text" name="patronymic" placeholder="Отчество*" aria-label="Отчество" required>
             </div>
           </div>
             <div class="about-me__contacts">
-                <div class="custom-input custom-input__contacts">
+                <div class="custom-input">
                 <label for="E-mail">Почта*</label>
-                <input class="custom-input__field custom-input__email" type="text" name="Почта*" placeholder="E-mail*" aria-label="Почта" id="E-mail" required>
+                <input class="custom-input__field" type="text" name="E-mail" placeholder="E-mail*" aria-label="Почта" id="E-mail" required>
                 <svg class="custom-input__mail-logo" width="20" height="20" aria-hidden="true">
                   <use xlink:href="images/sprite.svg#logo-mail"></use>
                 </svg>
               </div>
-              <div class="custom-input custom-input__contacts">
+              <div class="custom-input">
                 <label for="date">Дата рождения*</label>
-                <input class="custom-input__field" type="text" name="Дата рождения" placeholder="dd/mm/yyyy*" aria-label="Дата рождения" id="date" required>
+                <input class="custom-input__field" type="text" name="birthday" placeholder="dd/mm/yyyy*" aria-label="Дата рождения" id="date" required>
                 <svg class="custom-input__mail-logo" width="20" height="20" aria-hidden="true">
                   <use xlink:href="images/sprite.svg#logo-date"></use>
                 </svg>
               </div>
-              <div class="custom-input custom-input__contacts">
+              <div class="custom-input">
                 <label for="phone">Телефон*</label>
-                <input class="custom-input__field" type="text" name="Телефон" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" aria-label="Телефон" id="phone" required>
+                <input class="custom-input__field" type="text" name="phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" aria-label="Телефон" id="phone" required>
                 <svg class="custom-input__mail-logo" width="20" height="20" aria-hidden="true">
                   <use xlink:href="images/sprite.svg#phone"></use>
                 </svg>
               </div>
             </div>
           </div>
+          </fieldset>
+          <fieldset class="about-company__field">
+            <legend class="about-company__field-name">Расскажи о компании</legend>
+            <div class="about-company__container">
+              <div class="custom-input">
+                <input class="custom-input__field" type="text" name="company-name" placeholder="Название компании*" aria-label="Название компании" required>
+              </div>
+              <div class="custom-input">
+                <input class="custom-input__field" type="text" name="company-website" placeholder="Сайт компании*" aria-label="Сайт компании" required>
+              </div>
+              <div class="custom-input custom-input__company-description">
+                <textarea class="custom-input__field" type="text" name="company-description" placeholder="Описание компании*" aria-label="Описание компании" required></textarea>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="project-link__field">
+            <legend class="project-link__field-name">Добавь ссылку на презентацию проекта</legend>
+            <div class="custom-input">
+              <input class="custom-input__field" type="text" name="link" placeholder="Ссылка*" aria-label="Ссылка" required>
+              <svg class="custom-input__project-link" width="20" height="20" aria-hidden="true">
+                <use xlink:href="images/sprite.project-link"></use>
+              </svg>
+            </div>
           </fieldset>
         </form>
           </div>

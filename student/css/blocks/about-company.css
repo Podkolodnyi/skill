@@ -1,0 +1,23 @@
+.about-company__field {
+    margin: 0 0 40px;
+}
+
+.about-company__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 80px;
+}
+
+.custom-input__company-description {
+    grid-column: span 2;
+    height: 102px;
+    justify-content: flex-start;
+}
+
+.custom-input__company-description .custom-input__field {
+    min-height: 100%;
+}
+
+.about-company__field-name {
+    margin-bottom: 60px;
+}
