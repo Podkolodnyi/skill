@@ -1,0 +1,16 @@
+.working-with-gazprom__field .custom-input {
+    margin: 28px 0 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    font-family: Unbounded;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.working-with-gazprom__field .custom-input label {
+    width: 20px;
+    height: 20px;
+}
