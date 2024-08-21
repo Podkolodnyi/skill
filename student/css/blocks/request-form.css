@@ -1,0 +1,37 @@
+.request-form__group {
+    margin: 0 0 40px;
+    border: none;
+    padding: 0;
+    position: relative;
+}
+
+.request-form__group-name {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 26.4px;
+}
+
+.request-form__image {
+    position: absolute;
+    top: -23px;
+}
+
+.request-form__group-name--with-image {
+    padding-left: 28px;
+}
+
+.request-form__submit-btn {
+    color: #1919EF66;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.5px;
+    background: none;
+    width: 166px;
+    height: 40px;
+    border-radius: 60px;
+    border: 1px solid #1919EF66;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}

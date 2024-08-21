@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin: 60px 0 0;
 }
 
 .custom-input__field {
@@ -12,10 +13,43 @@
   padding: 0 32px 12px 0;
   font-size: 18px;
   border-bottom: 1px solid #CACACA;
-  font-family: Unbounded;
   line-height: 21.6px;
+  height: 34px;
+}
+
+
+.custom-input--with-label {
+  margin: 42px 0 0;
+  height: 52px;
+}
+
+.custom-input--with-label .custom-input__field {
+  padding: 0 32px 12px 0;
+  margin: 4px 0 0;
 }
 
 .custom-input__field::placeholder {
   color: #9B9B9B;
+}
+
+.custom-input__label {
+  color: #1919EF;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.4px;
+  text-align: left;
+}
+
+.custom-input__image {
+  position: absolute;
+  right: 0;
+  bottom: 12px;
+}
+
+.custom-input__field--short {
+  max-width: 560px;
+}
+
+.custom-input--short-margin {
+  margin: 27px 0 0;
 }

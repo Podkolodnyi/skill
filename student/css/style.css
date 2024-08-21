@@ -4,16 +4,16 @@
 @import "./global/reboot.css";
 @import "./global/container.css";
 @import "./global/visually-hidden.css";
-@import "./global/form.css";
 
 /* Blocks */
 /* ------------------------------------ */
 @import "./blocks/header.css";
 @import "./blocks/request.css";
-@import "./blocks/custom-input.css";
-@import "./blocks/footer.css";
+@import "./blocks/request-form.css";
 @import "./blocks/about-me.css";
 @import "./blocks/about-company.css";
-@import "./blocks/project-link.css";
-@import "./blocks/about-project.css";
-@import "./blocks/working-with-gazprom.css";
+@import "./blocks/custom-input.css";
+@import "./blocks/custom-textarea.css";
+@import "./blocks/custom-checkbox.css";
+@import "./blocks/custom-radio.css";
+@import "./blocks/footer.css";

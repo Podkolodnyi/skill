@@ -1,0 +1,35 @@
+.custom-radio {
+    margin: 28px 0 0;
+}
+
+.custom-radio-field {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-radio-field+.custom-radio__label {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: Unbounded;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+}
+
+.custom-radio-field+.custom-radio__label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 1em;
+}
+
+.custom-radio-field:checked+.custom-radio__label::before {
+    border: 6px solid #1919EF;
+}
