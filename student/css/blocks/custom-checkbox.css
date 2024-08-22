@@ -15,9 +15,10 @@
     font-weight: 400;
     line-height: 20px;
     text-align: left;
+    user-select: none;
 }
 
-.custom-checkbox__label::before{
+.custom-checkbox__label::before {
     margin-right: 20px;
 }
 
@@ -40,11 +41,20 @@
     background-image: url('../../images/sprite/checkbox.svg');
 }
 
+.custom-checkbox>.custom-checkbox__field:focus+.custom-checkbox__label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.custom-checkbox>.custom-checkbox__field:not(:disabled):not(:checked)+.custom-checkbox__label:hover::before {
+    border-color: #b3d7ff;
+  }
+
 .custom-checkbox--personal-data {
     margin: 60px 0 80px;
 }
 
-.custom-checkbox--personal-data .custom-checkbox__label, .custom-checkbox__link {
+.custom-checkbox--personal-data .custom-checkbox__label,
+.custom-checkbox__link {
     font-family: inherit;
     font-size: 12px;
     font-weight: 400;
