@@ -1,7 +1,9 @@
 .about-me {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    grid-template-rows: auto auto auto;
+    gap: 42px 80px;
+    grid-auto-flow: column;
 }
 
 .about-me__button {

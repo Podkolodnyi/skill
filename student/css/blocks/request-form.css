@@ -9,11 +9,25 @@
     font-size: 22px;
     font-weight: 300;
     line-height: 26.4px;
+    margin: 0 0 60px;
+}
+
+.request-form__group--with-chechbox,  .request-form__group--with-radio {
+    display: grid;
+    gap: 28px;
+}
+
+.request-form__group--about-me .request-form__group-name {
+    margin: 0 0 42px;
+}
+
+.request-form__group--with-chechbox .request-form__group-name, .request-form__group--with-radio .request-form__group-name {
+    margin: 0 0 28px;
 }
 
 .request-form__image {
     position: absolute;
-    top: -23px;
+    top: -51px;
 }
 
 .request-form__group-name--with-image {
@@ -34,4 +48,12 @@
     display: block;
     margin: 0 auto;
     cursor: pointer;
+}
+
+.request-form__single-textarea {
+    margin: 0 0 60px;
+}
+
+.request-form__personal-data {
+    margin: 0 0 80px;
 }

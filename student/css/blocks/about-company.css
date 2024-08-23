@@ -1,10 +1,9 @@
 .about-company {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
+    gap:60px 80px;
 }
 
-.about-company__description {
+.about-company .custom-textarea{
     grid-column: span 2;
-    margin: 60px 0 0;
 }
