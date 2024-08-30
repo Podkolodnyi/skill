@@ -1,0 +1,67 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    max-width: 340px;
+    padding: 36px 32px 24px;
+}
+
+.card__title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+    margin: 0 0 29px;
+}
+
+.card__tariff-structure {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0 23px;
+}
+
+.card__tariff-structure-elem-separator {
+    height: 34px;
+    border: 1px solid #999899;
+}
+
+.card__tariff-structure-elem {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+}
+
+.card__tariff-structure-elem-num {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+}
+
+.card__tariff-services {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0 0 12px;
+}
+
+.card__services-elem {
+    display: flex;
+    align-items: center;
+    max-width: 156px;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+}
+
+.card__tariff-detailed-link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.1px;
+    color: #259DD6;
+    margin: 0 0 28px;
+}
