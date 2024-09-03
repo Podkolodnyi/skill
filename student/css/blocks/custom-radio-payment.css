@@ -1,8 +1,23 @@
 .custom-radio-payment {
     position: relative;
     padding: 12px 16px 16px;
-    border: 2px solid #259DD6;
+}
+
+.custom-radio-payment__sibling {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #E2E4E8;
     border-radius: 20px;
+    pointer-events: none;
+}
+
+.custom-radio-payment__fat-text {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18.2px;
 }
 
 .custom-radio-payment__monthly-price {
@@ -15,7 +30,6 @@
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
-    margin: 0 0 6px;
 }
 
 .custom-radio-payment__details {
@@ -31,7 +45,25 @@
     opacity: 0;
 }
 
-.custom-radio-payment__field+.custom-radio-payment__description::after {
+.custom-radio-payment__description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.custom-radio-payment--first .custom-radio-payment__description {
+    display: block;
+}
+
+.custom-radio-payment--first .custom-radio-payment__monthly-price {
+    margin: 0 0 6px;
+}
+
+.custom-radio-payment--first .custom-radio-payment__details {
+    margin: 0 0 4px;
+}
+
+.custom-radio-payment__description::after {
     content: '';
     display: block;
     width: 20px;
@@ -46,4 +78,30 @@
     position: absolute;
     top: 16px;
     right: 16px;
+}
+
+.custom-radio-payment:hover .custom-radio-payment__sibling {
+    border: 2px solid #259DD6;
+}
+
+.custom-radio-payment__field:focus+.custom-radio-payment__description+.custom-radio-payment__sibling {
+    border: 2px solid #259DD6;
+}
+
+.custom-radio-payment__field:checked+.custom-radio-payment__description+.custom-radio-payment__sibling {
+    border: 2px solid #259DD6;
+}
+
+.custom-radio-payment:hover .custom-radio-payment__description::after {
+    border: 2px solid #1883B6;
+}
+
+.custom-radio-payment__field:focus+.custom-radio-payment__description::after {
+    border: 2px solid #1883B6;
+}
+
+.custom-radio-payment__field:checked+.custom-radio-payment__description::after {
+    background-image: url("../../images/sprite/check.svg");
+    border: none;
+    background-size: 100%;
 }
