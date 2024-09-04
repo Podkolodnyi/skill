@@ -3,7 +3,7 @@
     flex-direction: column;
     background-color: #FFFFFF;
     max-width: 340px;
-    padding: 35px 31px 23px;
+    padding: 36px 32px 24px;
     border: 1px solid #E2E4E8;
     border-radius: 28px;
 }
@@ -17,27 +17,50 @@
 
 .card__tariff-structure {
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
     margin: 0 0 23px;
 }
 
-.card__tariff-structure-elem-separator {
-    height: 34px;
-    border: 1px solid #999899;
+.card__tariff-structure-elem-num {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    margin: 0 0 5px;
 }
 
-.card__tariff-structure-elem {
+.card__tariff-structure-elem-text {
+    display: block;
     text-align: center;
     font-size: 14px;
     font-weight: 400;
     line-height: 18.2px;
 }
 
-.card__tariff-structure-elem-num {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28.8px;
+.card__tariff-structure-elem--start {
+    padding: 0 45px 0 25px;
+    position: relative;
+}
+
+.card__tariff-structure-elem--center {
+    padding: 0 33px 0 32px;
+    position: relative;
+}
+
+.card__tariff-structure-elem--end {
+    padding: 0 0 0 38px;
+}
+
+.card__tariff-structure-elem--start::after,
+.card__tariff-structure-elem--center::after {
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    right: 0;
+    height: 34px;
+    border: 1px solid #999899;
 }
 
 .card__tariff-services {
@@ -50,8 +73,11 @@
 .card__services-elem {
     display: flex;
     align-items: center;
-    max-width: 156px;
     gap: 8px;
+}
+
+.card__services-elem-text {
+    max-width: 151px;
     font-size: 14px;
     font-weight: 400;
     line-height: 18.2px;
@@ -85,13 +111,17 @@
 
 .card__order-button {
     background: linear-gradient(270deg, #537CCB 0%, #13AED7 100%);
-    padding: 18px 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     border-radius: 16px;
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
+    width: 276px;
+    height: 56px;
 }
 
 .card__order-button:hover {

@@ -21,6 +21,9 @@
 }
 
 .custom-radio-payment__monthly-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 16px;
     font-weight: 500;
     line-height: 19.2px;
@@ -32,7 +35,7 @@
     line-height: 36px;
 }
 
-.custom-radio-payment__details {
+.custom-radio-payment__details, .custom-radio-payment__details-second-draw {
     font-size: 14px;
     font-weight: 500;
     line-height: 18.2px;
