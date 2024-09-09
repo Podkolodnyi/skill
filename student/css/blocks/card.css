@@ -15,6 +15,31 @@
     margin: 0 0 29px;
 }
 
+.card--take-action .card__title {
+    width: fit-content;
+    position: relative;
+}
+
+.card--take-action .card__title::after {
+    content: "Хит продаж";
+    position: absolute;
+    right: -122px;
+    bottom: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.1px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #537CCB 0%, #9648BD 100%);
+    border-radius: 60px;
+    width: 109px;
+    height: 28px;
+}
+
 .card__tariff-structure {
     display: flex;
     justify-content: start;
@@ -40,13 +65,21 @@
 }
 
 .card__tariff-structure-elem--start {
-    padding: 0 45px 0 25px;
+    padding: 0 38px 0 19px;
     position: relative;
 }
 
+.card__tariff-structure-elem--start .card__tariff-structure-elem-num {
+    width: 27px;
+}
+
 .card__tariff-structure-elem--center {
-    padding: 0 33px 0 32px;
+    padding: 0 27px 0 26px;
     position: relative;
+}
+
+.card__tariff-structure-elem--center .card__tariff-structure-elem-num {
+    width: 53px;
 }
 
 .card__tariff-structure-elem--end {
@@ -130,4 +163,28 @@
 
 .card__order-button:focus {
     background: #537CCB;
+}
+
+.card--take-action .card__order-button {
+    background: linear-gradient(270deg, #9548BD 0%, #547CCB 100%);
+}
+
+.card--take-action .card__order-button:hover {
+    background: #9548BD;
+}
+
+.card--take-action .card__order-button:focus {
+    background: #9548BD;
+}
+
+.card--win .card__order-button {
+    background: linear-gradient(270deg, #D812AE 0%, #9548BD 100%);
+}
+
+.card--win .card__order-button:hover {
+    background: #D812AE;
+}
+
+.card--win .card__order-button:focus {
+    background: #D812AE;
 }

@@ -1,5 +1,23 @@
-p {
+.tariffs {
+    margin: 0 0 100px;
+}
+
+.tariffs p {
     margin: 0;
+}
+
+.tariffs__title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 57.6px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 40px 0 60px;
+}
+
+.tariffs__title-hashtag {
+    color: #259DD6;
 }
 
 .tariffs__cards {
