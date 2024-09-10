@@ -45,6 +45,7 @@
     justify-content: start;
     align-items: center;
     margin: 0 0 23px;
+    gap: 19px;
 }
 
 .card__tariff-structure-elem-num {
@@ -65,28 +66,27 @@
 }
 
 .card__tariff-structure-elem--start {
-    padding: 0 38px 0 19px;
+    width: 65px;
     position: relative;
-}
-
-.card__tariff-structure-elem--start .card__tariff-structure-elem-num {
-    width: 27px;
 }
 
 .card__tariff-structure-elem--center {
-    padding: 0 27px 0 26px;
+    width: 105px;
     position: relative;
 }
 
-.card__tariff-structure-elem--center .card__tariff-structure-elem-num {
-    width: 53px;
-}
-
 .card__tariff-structure-elem--end {
-    padding: 0 0 0 38px;
+    width: 67px;
 }
 
-.card__tariff-structure-elem--start::after,
+.card__tariff-structure-elem--center::before {
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    height: 34px;
+    border: 1px solid #999899;
+}
 .card__tariff-structure-elem--center::after {
     content: "";
     position: absolute;

@@ -69,8 +69,8 @@
 .custom-radio-payment__description::after {
     content: '';
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     flex-shrink: 0;
     flex-grow: 0;
     border: 2px solid #259DD6;
@@ -80,7 +80,7 @@
     background-size: 50% 50%;
     position: absolute;
     top: 16px;
-    right: 16px;
+    right: 15px;
 }
 
 .custom-radio-payment:hover .custom-radio-payment__sibling {

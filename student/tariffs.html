@@ -318,73 +318,88 @@
 
     <section class="making-order">
       <div class="container container--making-order">
-      <h2 class="making-order__title">Заказать SIM-карту Газпромбанк Мобайл</h2>
-      <div class="making-order__body">
-        <div class="making-order__steps-bar">
-          <div class="making-order__step-elem making-order__step-elem--active">
-            <div class="making-order__step-icon">Шаг 1</div>
-            <div class="making-order__step-name">Заказ SIM-карты</div>
+        <h2 class="making-order__title">Заказать SIM-карту Газпромбанк Мобайл</h2>
+        <div class="making-order__body">
+          <div class="making-order__steps-bar">
+            <div class="making-order__step-elem making-order__step-elem--active">
+              <div class="making-order__step-icon">Шаг 1</div>
+              <div class="making-order__step-name">Заказ SIM-карты</div>
+            </div>
+            <div class="making-order__step-separator"></div>
+            <div class="making-order__step-elem">
+              <div class="making-order__step-icon">Шаг 2</div>
+              <div class="making-order__step-name">Подтверждение</div>
+            </div>
+            <div class="making-order__step-separator"></div>
+            <div class="making-order__step-elem">
+              <div class="making-order__step-icon">Шаг 3</div>
+              <div class="making-order__step-name">Выбор тарифа</div>
+            </div>
+            <div class="making-order__step-separator"></div>
+            <div class="making-order__step-elem making-order__step-elem--last">
+              <div class="making-order__step-icon">Шаг 4</div>
+              <div class="making-order__step-name">Доставка</div>
+            </div>
           </div>
-          <div class="making-order__step-separator"></div>
-          <div class="making-order__step-elem">
-            <div class="making-order__step-icon">Шаг 2</div>
-            <div class="making-order__step-name">Подтверждение</div>
-          </div>
-          <div class="making-order__step-separator"></div>
-          <div class="making-order__step-elem">
-            <div class="making-order__step-icon">Шаг 3</div>
-            <div class="making-order__step-name">Выбор тарифа</div>
-          </div>
-          <div class="making-order__step-separator"></div>
-          <div class="making-order__step-elem making-order__step-elem--last">
-            <div class="making-order__step-icon">Шаг 4</div>
-            <div class="making-order__step-name">Доставка</div>
-          </div>
+          <div class="making-order__separator"></div>
+          <form class="making-order__form" action="#" method="post">
+            <div class="making-order__form-personal-date">
+              <div class="making-order__form-sim-type">
+                <h3 class="making-order__form-sim-type-title">Выберите тип SIM-карты</h3>
+                <div class="custom-radio">
+                  <input class="custom-radio__field" type="radio" id="sim-type-plastic" name="sim-type"
+                    value="sim-type-plastic" aria-label="пластиковая">
+                  <label class="custom-radio__label" for="sim-type-plastic">пластиковая</label>
+                </div>
+                <div class="custom-radio">
+                  <input class="custom-radio__field" type="radio" id="sim-type-esim" name="sim-type"
+                    value="sim-type-esim" aria-label="eSIM">
+                  <label class="custom-radio__label" for="sim-type-esim">eSIM</label>
+                </div>
+              </div>
+              <div class="custom-input">
+                <label class="custom-input__label" for="input-tel">Контактный номер*</label>
+                <input class="custom-input__field" type="tel" id="input-tel" name="input-tel"
+                  aria-label="Контактный номер" required>
+              </div>
+              <div class="custom-input">
+                <label class="custom-input__label" for="input-name">ФИО*</label>
+                <input class="custom-input__field" type="text" id="input-name" name="input-name" aria-label="ФИО"
+                  placeholder="Иванов Иван Иванович" required>
+              </div>
+              <div class="custom-input">
+                <label class="custom-input__label" for="input-email">Электронная почта</label>
+                <input class="custom-input__field" type="email" id="input-email" name="input-email" aria-label="email"
+                  placeholder="ivan@email.ru">
+              </div>
+            </div>
+            <div class="making-order__form-footer">
+              <div class="custom-checkbox custom-checkbox--background">
+                <input class="custom-checkbox__field" type="radio" id="transferr-num" name="transferr-num"
+                  value="transferr-num" aria-label="Перенос номера">
+                <label class="custom-checkbox__label" for="transferr-num">
+                  <p class="custom-checkbox__label-text">Перенести номер и получать +5 ГБ ежемесячно</p>
+                    <svg class="custom-checkbox__label-i" width="20" height="20" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-info"></use>
+                    </svg>
+                </label>
+              </div>
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field" type="radio" id="agree-rules" name="agree-rules"
+                  value="agree-rules" aria-label="согласие с првилами заказа и доставки и на обработку личных данных">
+                <label class="custom-checkbox__label" for="agree-rules">
+                  <p class="custom-checkbox__label-text">Согласен с <a class="custom-checkbox__label-link">Правилами заказа и доставки
+                    SIM-карт</a>, на обработку в соответствии с ними моих персональных данных и получение рекламы.</p>
+                  <svg class="custom-checkbox__label-i" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-info"></use>
+                  </svg>
+                </label>
+              </div>
+              <button class="making-order__form-order-button" type="button">Продолжить</button>
+            </div>
+          </form>
         </div>
-        <form class="making-order__form" action="#" method="post">
-          <div class="making-order__form-radio">
-            <h3 class="making-order__form-radio-name">Выберите тип SIM-карты</h3>
-            <div class="custom-radio">
-              <input class="custom-radio__field" type="radio" id="sim-type-plastic" name="sim-type"
-                value="sim-type-plastic" aria-label="пластиковая">
-              <label for="sim-type-plastic">пластиковая</label>
-            </div>
-            <div class="custom-radio">
-              <input class="custom-radio__field" type="radio" id="sim-type-esim" name="sim-type" value="sim-type-esim"
-                aria-label="пластиковая">
-              <label class="custom-radio__label" for="sim-type-esim">eSIM</label>
-            </div>
-          </div>
-          <div class="custom-input">
-            <label class="custom-input__label" for="input-tel">Контактный номер*</label>
-            <input class="custom-input__field" type="tel" id="input-tel" name="input-tel" aria-label="Контактный номер"
-              required>
-          </div>
-          <div class="custom-input">
-            <label class="custom-input__label" for="input-name">ФИО*</label>
-            <input class="custom-input__field" type="text" id="input-name" name="input-name" aria-label="ФИО"
-              placeholder="Иванов Иван Иванович" required>
-          </div>
-          <div class="custom-input">
-            <label class="custom-input__label" for="input-email">Электронная почта</label>
-            <input class="custom-input__field" type="email" id="input-email" name="input-email" aria-label="email"
-              placeholder="ivan@email.ru">
-          </div>
-          <div class="custom-radio">
-            <input class="custom-radio__field" type="radio" id="transferr-num" name="transferr-num"
-              value="transferr-num" aria-label="Перенос номера">
-            <label class="custom-radio__label" for="transferr-num">Перенести номер и получать +5 ГБ ежемесячно</label>
-          </div>
-          <div class="custom-radio">
-            <input class="custom-radio__field" type="radio" id="agree-rules" name="agree-rules" value="agree-rules"
-              aria-label="согласие с првилами заказа и доставки и на обработку личных данных">
-            <label class="custom-radio__label" for="agree-rules">Согласен с Правилами заказа и доставки
-              SIM-карт, на обработку в соответствии с ними моих персональных данных и получение рекламы.</label>
-          </div>
-          <button class="making-order__form-order-button" type="button">Продолжить</button>
-        </form>
       </div>
-    </div>
     </section>
 
   </main>
