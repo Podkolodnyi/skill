@@ -18,21 +18,12 @@
     opacity: 0;
 }
 
-.custom-checkbox__label {
-    /* display: flex;
-    gap: 12px;
-    align-items: start;
-    justify-content: space-between; */
-    
-}
-
 .custom-checkbox__label::before {
     content: "";
     display: block;
     position: absolute;
     top: 16px;
     left: 20px;
-    /* flex-shrink: 0; */
     width: 20px;
     height: 20px;
     border: 2px solid #C7CED3;
@@ -46,7 +37,6 @@
     font-size: 12px;
     font-weight: 500;
     line-height: 14.4px;
-    /* flex-grow: 1; */
 }
 
 .custom-checkbox--background .custom-checkbox__label-text {
@@ -68,11 +58,6 @@
     position: absolute;
     top: 27px;
     right: 22px;
-    /* flex-shrink: 0;
-    flex-grow: 1;
-    align-self: center;
-    display: flex;
-    justify-content: flex-end; */
 }
 
 .custom-checkbox--background .custom-checkbox__label-i {
