@@ -10,6 +10,8 @@
     padding: 40px 60px;
     background: #FFFFFF;
     box-shadow: 0px 10px 24px 0px #2023341A;
+    border-radius: 20px;
+    margin: 0 0 28px;
 }
 
 .making-order__steps-bar {
@@ -100,4 +102,48 @@
     line-height: 16.1px;
     color: #858385;
     margin: 0 0 12px;
+}
+
+.making-order__form-footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.making-order__form-footer-wide-block {
+    grid-column: span 2;
+}
+
+.making-order__form-order-button {
+    width: 131px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F0F0F0;
+    border: none;
+    border-radius: 60px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.1px;
+    color: #858385;
+    align-self: end;
+    justify-self: end;
+}
+
+.making-order__additional-information {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.4px;
+    color: #858385;
+    margin: 0 0 100px;
+}
+
+.making-order__additional-information-link {
+    color: #239DD6;
+    text-decoration: underline;
+}
+
+.making-order__additional-information-link:hover {
+    color: #9D1881;
+    cursor: default;
 }

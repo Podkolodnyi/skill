@@ -129,6 +129,7 @@
 
 .card__tariff-detailed-link:hover {
     color: #9D1881;
+    cursor: default;
 }
 
 .card__tariff-detailed-link:focus {

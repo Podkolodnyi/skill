@@ -21,3 +21,17 @@
     border-radius: 100px;
     flex-shrink: 0;
 }
+
+.custom-radio__field:hover+.custom-radio__label::before {
+    border-color: #1883B6;
+}
+
+.custom-radio__field:focus+.custom-radio__label::before {
+    border-color: #1883B6;
+}
+
+.custom-radio__field:checked+.custom-radio__label::before {
+    background-image: url("../../images/sprite/check.svg");
+    border: none;
+    background-size: 100%;
+}

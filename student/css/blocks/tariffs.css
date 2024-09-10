@@ -16,6 +16,11 @@
     margin: 42px 0 59px;
 }
 
+.tariffs__title-link:hover {
+    color: #259DD6;
+    cursor: default;
+}
+
 .tariffs__title-hashtag {
     color: #259DD6;
 }
