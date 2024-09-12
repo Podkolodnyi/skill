@@ -13,6 +13,24 @@
     background: #FCFCFC;
     border: 1px solid #F0F0F0;
     border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.1px;
+}
+
+.custom-input__field:hover {
+    border-color: #BFBFBF;
+}
+
+.custom-input__field:focus {
+    border-color: #8DD6F8;
+    outline: none;
+}
+
+.custom-input__field:disabled {
+    background: #F6F6F6;
+    border-color: #F0F0F0;
 }
 
 .custom-input__field::placeholder {
@@ -21,5 +39,22 @@
     line-height: 16.1px;
     color: #BFBFBF;
     padding-left: 20px;
-    font-family: "Noto Sans", "Arial", sans-serif;
+    font-family: inherit;
+}
+
+.custom-input--error .custom-input__field {
+    background: #FBE2E0;
+}
+
+.custom-input__error {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 13.8px;
+    color: #D72522;
+    padding: 4px;
+    display: none;
+}
+
+.custom-input--error .custom-input__error  {
+    display: block;
 }

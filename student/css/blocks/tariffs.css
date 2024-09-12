@@ -18,7 +18,7 @@
 
 .tariffs__title-link:hover {
     color: #259DD6;
-    cursor: default;
+    cursor: pointer;
 }
 
 .tariffs__title-hashtag {

@@ -73,13 +73,13 @@
     border: 2px solid #F0F0F0;
 }
 
-.making-order__separator{
+.making-order__separator {
     margin: 35px 0 36px;
     min-width: 100%;
     border: 1px solid #F0F0F0;
 }
 
-.making-order__form-personal-date {
+.making-order__form-ordering-data {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
@@ -145,5 +145,4 @@
 
 .making-order__additional-information-link:hover {
     color: #9D1881;
-    cursor: default;
 }

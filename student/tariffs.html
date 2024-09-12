@@ -31,7 +31,8 @@
     <!-- Выбор тарифа -->
     <section class="tariffs">
         <div class="container">
-            <h1 class="tariffs__title"><a class="tariffs__title-link">Тарифы</a> <span class="tariffs__title-hashtag">#Разумныйвыбор</span></h1>
+            <h1 class="tariffs__title"><a class="tariffs__title-link">Тарифы</a> <span class="tariffs__title-hashtag">#Разумныйвыбор</span>
+            </h1>
             <div class="tariffs__cards">
                 <div class="card card--try-it">
                     <h2 class="card__title">Пробуй</h2>
@@ -75,14 +76,14 @@
                             <p class="card__services-elem-text">Доп. пакеты услуг</p>
                         </div>
                     </div>
-                    <a class="card__tariff-detailed-link" href="#" aria-label="подробнее о тарифе"><span
+                    <a class="card__tariff-detailed-link link-blue" href="#" aria-label="подробнее о тарифе"><span
                             class="card__tariff-detailed-text">Подробнее о тарифе</span>
                         <svg class="card__tariff-detailed-image" width="5" height="10" aria-hidden="true">
                             <use xlink:href="images/sprite.svg#icon-right-arrow"></use>
                         </svg>
                     </a>
                     <form class="card__payment-form" action="#" method="post">
-                        <div class="card__payment-selection">
+                        <fieldset class="card__payment-selection">
                             <div class="custom-radio-payment custom-radio-payment--first">
                                 <input class="custom-radio-payment__field" type="radio" id="try-it-1"
                                        name="try-it-payment"
@@ -125,7 +126,7 @@
                                 </label>
                                 <div class="custom-radio-payment__sibling"></div>
                             </div>
-                        </div>
+                        </fieldset>
                         <button class="card__order-button" type="button">Заказать SIM-карту</button>
                     </form>
                 </div>
@@ -172,14 +173,14 @@
                             <p class="card__services-elem-text">Доп. пакеты услуг</p>
                         </div>
                     </div>
-                    <a class="card__tariff-detailed-link" href="#" aria-label="подробнее о тарифе"><span
+                    <a class="card__tariff-detailed-link link-blue" href="#" aria-label="подробнее о тарифе"><span
                             class="card__tariff-detailed-text">Подробнее о тарифе</span>
                         <svg class="card__tariff-detailed-image" width="5" height="10" aria-hidden="true">
                             <use xlink:href="images/sprite.svg#icon-right-arrow"></use>
                         </svg>
                     </a>
                     <form class="card__payment-form" action="#" method="post">
-                        <div class="card__payment-selection">
+                        <fieldset class="card__payment-selection">
                             <div class="custom-radio-payment custom-radio-payment--first">
                                 <input class="custom-radio-payment__field" type="radio" id="take-action-1"
                                        name="take-action-payment"
@@ -222,7 +223,7 @@
                                 </label>
                                 <div class="custom-radio-payment__sibling"></div>
                             </div>
-                        </div>
+                        </fieldset>
                         <button class="card__order-button" type="button">Заказать SIM-карту</button>
                     </form>
                 </div>
@@ -269,14 +270,14 @@
                             <p class="card__services-elem-text">Доп. пакеты услуг</p>
                         </div>
                     </div>
-                    <a class="card__tariff-detailed-link" href="#" aria-label="подробнее о тарифе"><span
+                    <a class="card__tariff-detailed-link link-blue" href="#" aria-label="подробнее о тарифе"><span
                             class="card__tariff-detailed-text">Подробнее о тарифе</span>
                         <svg class="card__tariff-detailed-image" width="5" height="10" aria-hidden="true">
                             <use xlink:href="images/sprite.svg#icon-right-arrow"></use>
                         </svg>
                     </a>
                     <form class="card__payment-form" action="#" method="post">
-                        <div class="card__payment-selection">
+                        <fieldset class="card__payment-selection">
                             <div class="custom-radio-payment custom-radio-payment--first">
                                 <input class="custom-radio-payment__field" type="radio" id="win-1" name="win-payment"
                                        value="win-1"
@@ -319,7 +320,7 @@
                                 </label>
                                 <div class="custom-radio-payment__sibling"></div>
                             </div>
-                        </div>
+                        </fieldset>
                         <button class="card__order-button" type="button">Заказать SIM-карту</button>
                     </form>
                 </div>
@@ -355,59 +356,78 @@
                 </div>
                 <div class="making-order__separator"></div>
                 <form class="making-order__form" action="#" method="post">
-                    <div class="making-order__form-personal-date">
-                        <div class="making-order__form-sim-type">
-                            <h3 class="making-order__form-sim-type-title">Выберите тип SIM-карты</h3>
-                            <div class="custom-radio">
+                    <fieldset class="making-order__form-ordering-data">
+                        <fieldset class="making-order__form-sim-type">
+                            <legend class="making-order__form-sim-type-title">Выберите тип SIM-карты</legend>
+                            <div class="custom-radio custom-radio--error">
                                 <input class="custom-radio__field" type="radio" id="sim-type-plastic" name="sim-type"
-                                       value="sim-type-plastic" aria-label="пластиковая">
-                                <label class="custom-radio__label" for="sim-type-plastic">пластиковая</label>
+                                       value="sim-type-plastic" aria-label="пластиковая" required>
+                                <label class="custom-radio__label" for="sim-type-plastic">
+                                        <svg class="custom-radio__check-icon" width="24" height="24" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#check"></use>
+                                        </svg>
+                                    <span class="custom-radio__text">пластиковая</span>
+                                </label>
                             </div>
                             <div class="custom-radio">
                                 <input class="custom-radio__field" type="radio" id="sim-type-esim" name="sim-type"
-                                       value="sim-type-esim" aria-label="eSIM">
-                                <label class="custom-radio__label" for="sim-type-esim">eSIM</label>
+                                       value="sim-type-esim" aria-label="eSIM" required>
+                                <label class="custom-radio__label" for="sim-type-esim">
+                                        <svg class="custom-radio__check-icon" width="24" height="24" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#check"></use>
+                                        </svg>
+                                    <span class="custom-radio__text">eSIM</span>
+                                    </label>
                             </div>
-                        </div>
-                        <div class="custom-input">
+                        </fieldset>
+                        <div class="custom-input custom-input--error">
                             <label class="custom-input__label" for="input-tel">Контактный номер*</label>
                             <input class="custom-input__field" type="tel" id="input-tel" name="input-tel"
-                                   aria-label="Контактный номер" required>
+                                   aria-label="Контактный номер" placeholder="+7 (9__) ___-__-__" required>
+                            <span class="custom-input__error">Некорректное значение</span>
                         </div>
                         <div class="custom-input">
                             <label class="custom-input__label" for="input-name">ФИО*</label>
                             <input class="custom-input__field" type="text" id="input-name" name="input-name"
                                    aria-label="ФИО"
                                    placeholder="Иванов Иван Иванович" required>
+                            <span class="custom-input__error">Некорректное значение</span>
                         </div>
                         <div class="custom-input">
                             <label class="custom-input__label" for="input-email">Электронная почта</label>
                             <input class="custom-input__field" type="email" id="input-email" name="input-email"
                                    aria-label="email"
                                    placeholder="ivan@email.ru">
+                            <span class="custom-input__error">Некорректное значение</span>
                         </div>
-                    </div>
+                    </fieldset>
                     <div class="making-order__form-footer">
                         <div class="custom-checkbox custom-checkbox--background making-order__form-footer-wide-block">
-                            <input class="custom-checkbox__field" type="radio" id="transferr-num" name="transferr-num"
+                            <input class="custom-checkbox__field" type="checkbox" id="transferr-num" name="transferr-num"
                                    value="transferr-num" aria-label="Перенос номера">
                             <label class="custom-checkbox__label" for="transferr-num">
-                                <p class="custom-checkbox__label-text">Перенести номер и получать +5 ГБ ежемесячно</p>
+                                        <svg class="custom-checkbox__check-icon" width="20" height="20" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#square-check"></use>
+                                        </svg>
+                                <span class="custom-checkbox__label-text">Перенести номер и получать +5 ГБ ежемесячно</span>
                                 <svg class="custom-checkbox__label-i" width="20" height="20" aria-hidden="true">
                                     <use xlink:href="images/sprite.svg#icon-info"></use>
                                 </svg>
                             </label>
                         </div>
-                        <div class="custom-checkbox making-order__form-footer-slim-block">
-                            <input class="custom-checkbox__field" type="radio" id="agree-rules" name="agree-rules"
+                        <div class="custom-checkbox making-order__form-footer-slim-block custom-checkbox--error">
+                            <input class="custom-checkbox__field" type="checkbox" id="agree-rules" name="agree-rules"
                                    value="agree-rules"
                                    aria-label="согласие с првилами заказа и доставки и на обработку личных данных"
                                    required>
                             <label class="custom-checkbox__label" for="agree-rules">
-                                <p class="custom-checkbox__label-text">Согласен с <a
-                                        class="custom-checkbox__label-link">Правилами заказа и доставки
+                                <svg class="custom-checkbox__check-icon" width="20" height="20" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#square-check"></use>
+                                </svg>
+                                <span class="custom-checkbox__label-text">Согласен с <a
+                                        class="custom-checkbox__label-link link-blue">Правилами заказа и доставки
                                     SIM-карт</a>, на обработку в соответствии с ними моих персональных данных и
-                                    получение рекламы.</p>
+                                    получение рекламы.</span>
                                 <svg class="custom-checkbox__label-i" width="20" height="20" aria-hidden="true">
                                     <use xlink:href="images/sprite.svg#icon-info"></use>
                                 </svg>
@@ -418,8 +438,8 @@
                 </form>
             </div>
             <div class="making-order__additional-information">Этот сайт защищен reCAPTCHA, и к нему применяются <a
-                    class="making-order__additional-information-link">Политика конфиденциальности Google</a> и <a
-                    class="making-order__additional-information-link">Условия предоставления услуг</a></div>
+                    class="making-order__additional-information-link link-blue">Политика конфиденциальности Google</a> и <a
+                    class="making-order__additional-information-link link-blue">Условия предоставления услуг</a></div>
         </div>
     </section>
 
