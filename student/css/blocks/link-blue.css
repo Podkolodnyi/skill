@@ -3,3 +3,11 @@
     outline: none;
     cursor: pointer;
 }
+
+.link-blue:hover {
+    color: #9D1881;
+}
+
+.link-blue:focus {
+    color: #9D1881;
+}

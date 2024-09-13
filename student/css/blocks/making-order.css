@@ -101,7 +101,7 @@
     font-weight: 500;
     line-height: 16.1px;
     color: #858385;
-    margin: 0 0 12px;
+    margin: 0 0 20px;
 }
 
 .making-order__form-footer {
@@ -119,15 +119,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #F0F0F0;
+    background: #239DD6;
     border: none;
     border-radius: 60px;
     font-size: 14px;
     font-weight: 600;
     line-height: 16.1px;
-    color: #858385;
+    color: #FFFFFF;
     align-self: end;
     justify-self: end;
+    margin: 0 3px 4px 0;
+}
+
+.making-order__form-order-button:hover {
+    background: #9D1881;
+}
+
+.making-order__form-order-button:focus {
+    background: #771061;
+}
+
+.making-order__form-order-button:disabled {
+    background: #F0F0F0;
+    color: #858385;
 }
 
 .making-order__additional-information {
@@ -139,10 +153,5 @@
 }
 
 .making-order__additional-information-link {
-    color: #239DD6;
     text-decoration: underline;
-}
-
-.making-order__additional-information-link:hover {
-    color: #9D1881;
 }

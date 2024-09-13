@@ -28,6 +28,7 @@
     height: 20px;
     border: 2px solid #C7CED3;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 
@@ -40,6 +41,7 @@
     font-weight: 500;
     line-height: 14.4px;
     user-select: none;
+    cursor: pointer;
 }
 
 .custom-checkbox--background .custom-checkbox__label-text {
@@ -49,12 +51,11 @@
 }
 
 .custom-checkbox__label-link {
-    color: #239DD6;
     text-decoration: underline;
 }
 
-.custom-checkbox__label-link:hover {
-    color: #9D1881;
+.custom-checkbox__label-i-link {
+    cursor: pointer;
 }
 
 .custom-checkbox__label-i {

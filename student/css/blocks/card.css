@@ -126,14 +126,6 @@
     margin: 0 0 28px;
 }
 
-.card__tariff-detailed-link:hover {
-    color: #9D1881;
-}
-
-.card__tariff-detailed-link:focus {
-    color: #9D1881;
-}
-
 .card__payment-selection {
     display: flex;
     flex-direction: column;

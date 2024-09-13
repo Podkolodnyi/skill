@@ -12,6 +12,7 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 16.1px;
+    cursor: pointer;
 }
 
 .custom-radio__label::before {
@@ -21,6 +22,7 @@
     border: 2px solid #259DD6;
     border-radius: 100px;
     flex-shrink: 0;
+    cursor: pointer;
 }
 
 .custom-radio__field:hover + .custom-radio__label::before {
