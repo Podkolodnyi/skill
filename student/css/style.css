@@ -10,7 +10,7 @@
 @import "./blocks/header.css";
 @import "./blocks/footer.css";
 @import "./blocks/tariffs.css";
-@import "./blocks/card.css";
+@import "./blocks/tariff-card.css";
 @import "./blocks/custom-radio-payment.css";
 @import "./blocks/making-order.css";
 @import "./blocks/custom-input.css";

@@ -2,10 +2,6 @@
     margin: 0 0 100px;
 }
 
-.tariffs p {
-    margin: 0;
-}
-
 .tariffs__title {
     font-size: 48px;
     font-weight: 600;
@@ -14,11 +10,7 @@
     text-transform: uppercase;
     text-align: center;
     margin: 42px 0 59px;
-}
-
-.tariffs__title-link:hover {
-    color: #259DD6;
-    cursor: pointer;
+    cursor: default;
 }
 
 .tariffs__title-hashtag {
@@ -26,6 +18,9 @@
 }
 
 .tariffs__cards {
+    list-style-type: none;
     display: flex;
     justify-content: space-between;
+    padding: 0;
+    margin: 0;
 }

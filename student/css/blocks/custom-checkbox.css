@@ -35,8 +35,8 @@
 .custom-checkbox__label-text {
     display: block;
     padding: 0 0 0 32px;
+    max-width: 365px;
     margin: 0;
-    max-width: 355px;
     font-size: 12px;
     font-weight: 500;
     line-height: 14.4px;
@@ -48,6 +48,7 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 16.1px;
+    max-width: 355px;
 }
 
 .custom-checkbox__label-link {

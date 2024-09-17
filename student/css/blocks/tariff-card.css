@@ -1,4 +1,4 @@
-.card {
+.tariff-card {
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
@@ -8,23 +8,24 @@
     border-radius: 28px;
 }
 
-.card__title {
+.tariff-card__title {
     font-size: 28px;
     font-weight: 700;
     line-height: 33.6px;
     margin: 0 0 29px;
+    cursor: default;
 }
 
-.card--take-action .card__title {
+.tariff-card--label .card__title {
     width: fit-content;
     position: relative;
 }
 
-.card--take-action .card__title::after {
+.tariff-card--label .card__title::after {
     content: "Хит продаж";
     position: absolute;
-    right: -122px;
-    bottom: 3px;
+    left: 151px;
+    top: 3px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,23 +33,24 @@
     font-weight: 700;
     line-height: 16.1px;
     letter-spacing: -0.02em;
-    text-align: left;
     color: #FFFFFF;
     background: linear-gradient(90deg, #537CCB 0%, #9648BD 100%);
     border-radius: 60px;
-    width: 109px;
-    height: 28px;
+    padding: 6px 12px;
+    min-width: 109px;
 }
 
-.card__tariff-structure {
+.tariff-card__options {
     display: flex;
     justify-content: start;
     align-items: center;
     margin: 0 0 23px;
     gap: 19px;
+    list-style-type: none;
+    padding: 0;
 }
 
-.card__tariff-structure-elem-num {
+.tariff-card__options-elem-num {
     display: block;
     text-align: center;
     font-size: 24px;
@@ -57,7 +59,7 @@
     margin: 0 0 5px;
 }
 
-.card__tariff-structure-elem-text {
+.tariff-card__options-elem-text {
     display: block;
     text-align: center;
     font-size: 14px;
@@ -65,21 +67,20 @@
     line-height: 18.2px;
 }
 
-.card__tariff-structure-elem--start {
+.tariff-card__options-elem:first-child {
     width: 65px;
-    position: relative;
 }
 
-.card__tariff-structure-elem--center {
+.tariff-card__options-elem:nth-child(2) {
     width: 105px;
     position: relative;
 }
 
-.card__tariff-structure-elem--end {
+.tariff-card__options-elem:last-child {
     width: 67px;
 }
 
-.card__tariff-structure-elem--center::before {
+.tariff-card__options-elem:nth-child(2)::before {
     content: "";
     position: absolute;
     bottom: 12px;
@@ -87,7 +88,7 @@
     height: 34px;
     border: 1px solid #999899;
 }
-.card__tariff-structure-elem--center::after {
+.tariff-card__options-elem:nth-child(2)::after {
     content: "";
     position: absolute;
     bottom: 12px;
@@ -96,27 +97,34 @@
     border: 1px solid #999899;
 }
 
-.card__tariff-services {
+.tariff-card__services {
     display: flex;
     flex-direction: column;
     gap: 12px;
     margin: 0 0 12px;
+    list-style-type: none;
+    max-width: 200px;
+    padding: 0;
 }
 
-.card__services-elem {
+.tariff-card__services-elem {
     display: flex;
     align-items: center;
     gap: 8px;
-}
-
-.card__services-elem-text {
-    max-width: 151px;
     font-size: 14px;
     font-weight: 400;
     line-height: 18.2px;
 }
 
-.card__tariff-detailed-link {
+.tariff-card__services-elem-image {
+    flex-shrink: 0;
+}
+
+.tariff-card__services-elem-text {
+    margin: 0;
+}
+
+.tariff-card__link {
     display: flex;
     align-items: center;
     font-size: 14px;
@@ -126,56 +134,17 @@
     margin: 0 0 28px;
 }
 
-.card__payment-selection {
+.tariff-card__payment-selection {
     display: flex;
     flex-direction: column;
     gap: 16px;
     margin: 0 0 20px;
 }
 
-.card__order-button {
-    background: linear-gradient(270deg, #537CCB 0%, #13AED7 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-radius: 16px;
-    color: #FFFFFF;
+.tariff-card__order-button {
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
-    width: 276px;
-    height: 56px;
-}
-
-.card__order-button:hover {
-    background: #537CCB;
-}
-
-.card__order-button:focus {
-    background: #537CCB;
-}
-
-.card--take-action .card__order-button {
-    background: linear-gradient(270deg, #9548BD 0%, #547CCB 100%);
-}
-
-.card--take-action .card__order-button:hover {
-    background: #9548BD;
-}
-
-.card--take-action .card__order-button:focus {
-    background: #9548BD;
-}
-
-.card--win .card__order-button {
-    background: linear-gradient(270deg, #D812AE 0%, #9548BD 100%);
-}
-
-.card--win .card__order-button:hover {
-    background: #D812AE;
-}
-
-.card--win .card__order-button:focus {
-    background: #D812AE;
+    padding: 18px 58px;
+    min-width: 276px;
 }
