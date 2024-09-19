@@ -12,9 +12,9 @@
 @import "./blocks/tariffs.css";
 @import "./blocks/tariff-card.css";
 @import "./blocks/custom-radio-payment.css";
-@import "./blocks/making-order.css";
+@import "./blocks/order.css";
 @import "./blocks/custom-input.css";
 @import "./blocks/custom-radio.css";
 @import "./blocks/custom-checkbox.css";
-@import "./blocks/link-blue.css";
+@import "./blocks/links.css";
 @import "./blocks/btn.css";

@@ -7,6 +7,18 @@
     border: none;
     border-radius: 16px;
     color: #FFFFFF;
+    background: #239DD6;
+}
+
+.btn:hover, .btn:focus {
+    background: #9D1881;
+}
+
+.btn:disabled {
+    background: #F0F0F0;
+    color: #858385;
+    cursor: default;
+    pointer-events: none;
 }
 
 .btn--gradient {
