@@ -16,12 +16,12 @@
     cursor: default;
 }
 
-.tariff-card--label .card__title {
+.tariff-card--label .tariff-card__title {
     width: fit-content;
     position: relative;
 }
 
-.tariff-card--label .card__title::after {
+.tariff-card--label .tariff-card__title::after {
     content: "Хит продаж";
     position: absolute;
     left: 151px;
@@ -141,7 +141,7 @@
     margin: 0 0 20px;
 }
 
-.tariff-card__order-button {
+.tariff-card__button {
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
