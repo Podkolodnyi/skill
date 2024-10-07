@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Оформление заказа — БЕСIT</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__anim">
+      <span class="header__green"></span>
+      <div class="header__picture">
+        <div class="header__image-big">
+          <img class="header__img" src="images/devil.png" width="320" height="320"
+            alt="Изображение фиолетового монстрика">
+        </div>
+      </div>
+      <div class="header__cubes">
+        <span class="header__cube"></span>
+        <span class="header__cube"></span>
+        <span class="header__cube"></span>
+        <span class="header__cube"></span>
+      </div>
+    </div>
+    <div class="header__wrapper">
+      <div class="container">
+        <div class="header__text">
+          <div class="header__title-wrap">
+            <p class="header__title"><span class="header__title-accent">Бес</span>it</p>
+          </div>
+          <div class="header__desc-wrap">
+            <p class="header__description">Но решение готово</p>
+          </div>
+        </div>
+      </div>
+      <button class="header__burger" aria-label="Переключаетель меню">
+        <svg class="header__burger-icon" width="40" height="40" aria-hidden="true">
+          <use xlink:href="images/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <main>
+    <!-- Оформление заказа -->
+    <section class="order">
+      <div class="container">
+        <h1 class="order__title"></h1>
+        <p class="order__title-comment"></p>
+        <form class="order__form">
+          <div class="order__info">
+            <fieldset class="order__contacts">
+              <legend class="order__contacts-title">Контактные данные</legend>
+              <div class="order__contacts-wrapper">
+                <div class="custom-input">
+                  <label class="custom-input__label" for="name">Имя</label>
+                  <input class="custom-input__field" type="text" id="name" name="name" required>
+                </div>
+                <div class="custom-input">
+                  <label class="custom-input__label" for="phone">Номер телефона</label>
+                  <input class="custom-input__field" type="tel" id="phone" name="phone" placeholder="+7 000 000-00-00"
+                    required>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field" type="checkbox" id="news-mail" name="news-mail"
+                    value="news-mail">
+                  <label class="custom-checkbox__label" for="news-mail">Получать новости сервиса</label>
+                  <p class="custom-checkbox__text">Сообщения будут приходить не чаще чем один раз в неделю</p>
+                </div>
+                <div class="custom-input">
+                  <label class="custom-input__label" for="email">Электронная почта</label>
+                  <input class="custom-input__field" type="email" id="email" name="email" required>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="order__delivery">
+              <legend class="order__delivery-title">Способ получения заказа</legend>
+              <ul class="radio-group">
+                <li class="custom-radio">
+                  <input class="custom-radio__field" type="radio" id="pickup" name="delivery" value="pickup" required>
+                  <label class="custom-radio__label" for="pickup">Самовывоз</label>
+                </li>
+                <li class="custom-radio">
+                  <input class="custom-radio__field" type="radio" id="delivery" name="delivery" value="delivery"
+                    required>
+                  <label class="custom-radio__label" for="delivery">Доставка</label>
+                </li>
+                <li class="custom-radio">
+                  <input class="custom-radio__field" type="radio" id="express" name="delivery" value="express" required>
+                  <label class="custom-radio__label" for="express">Экспресс-доставка</label>
+                </li>
+              </ul>
+              <div class="custom-textarea">
+                <label class="custom-textarea__label" for="address">Адрес доставки</label>
+                <textarea class="custom-textarea__field" name="address" id="address"></textarea>
+              </div>
+              <div class="order__delivery-options">
+                <ul class="order__delivery-options-checkboxes">
+                  <li class="custom-checkbox">
+                    <input class="custom-checkbox__field" type="checkbox" id="to-friend" name="to-friend"
+                      value="to-friend">
+                    <label class="custom-checkbox__label" for="to-friend">Заказываю другу</label>
+                    <p class="custom-checkbox__text">Друг получит уведомление от нас на свой номер телефона за час до
+                      выезда курьера</p>
+                  </li>
+                  <li class="custom-checkbox">
+                    <input class="custom-checkbox__field" type="checkbox" id="Leave" name="Leave" value="Leave">
+                    <label class="custom-checkbox__label" for="Leave">Оставить у двери</label>
+                    <p class="custom-checkbox__text">Включите эту опцию, если уверены в безопасности оставленного пакета
+                    </p>
+                  </li>
+                </ul>
+                <div class="custom-input">
+                  <label class="custom-input__label" for="friend-phone">Номер телефона друга</label>
+                  <input class="custom-input__field" type="tel" id="friend-phone" name="friend-phone"
+                    placeholder="+7 000 000-00-00">
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="order__pay">
+              <legend class="order__pay-title">Способ оплаты</legend>
+              <ul class="radio-group">
+                <li class="custom-radio">
+                  <input class="custom-radio__field" type="radio" id="card-pay" name="pay-method" value="card-pay"
+                    required>
+                  <label class="custom-radio__label" for="card-pay">Картой онлайн</label>
+                </li>
+                <li class="custom-radio">
+                  <input class="custom-radio__field" type="radio" id="cash-pay" name="pay-method" value="cash-pay"
+                    required>
+                  <label class="custom-radio__label" for="cash-pay">Наличными</label>
+                </li>
+                <li class="custom-radio">
+                  <input class="custom-radio__field" type="radio" id="phone-pay" name="pay-method" value="phone-pay"
+                    required>
+                  <label class="custom-radio__label" for="phone-pay">По телефону</label>
+                </li>
+              </ul>
+              <ul class="order__card-info">
+                <li class="custom-input">
+                  <label class="custom-input__label" for="card-num">Номер карты</label>
+                  <input class="custom-input__field" type="number" id="card-num" name="card-info"
+                    placeholder="0000 0000 0000 0000">
+                </li>
+                <li class="custom-input">
+                  <label class="custom-input__label" for="card-month">ММ</label>
+                  <input class="custom-input__field" type="number" id="card-month" name="card-info" placeholder="00">
+                </li>
+                <li class="custom-input">
+                  <label class="custom-input__label" for="card-year">ГГ</label>
+                  <input class="custom-input__field" type="number" id="card-year" name="card-info" placeholder="00">
+                </li>
+                <li class="custom-input">
+                  <label class="custom-input__label" for="card-cvv">CVV</label>
+                  <input class="custom-input__field" type="number" id="card-cvv" name="card-info" placeholder="000">
+                </li>
+              </ul>
+              <div class="order__pay-footer">
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field" type="checkbox" id="send-check" name="send-check"
+                    value="send-check">
+                  <label class="custom-checkbox__label" for="send-check">Отправить чек на электронную почту</label>
+                  <p class="custom-checkbox__text">Если хотите всё контролировать ;)</p>
+                </div>
+                <div class="custom-input">
+                  <label class="custom-input__label" for="email-2">Электронная почта</label>
+                  <input class="custom-input__field" type="email-2" id="email-2" name="email-2" required>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="order__comment">
+              <legend class="order__comment-title">Комментарий к заказу</legend>
+              <div class="custom-textarea">
+                <label class="custom-textarea__label" for="comment">Ваш комментарий</label>
+                <textarea class="custom-textarea__field" name="comment" id="comment"></textarea>
+              </div>
+            </fieldset>
+          </div>
+          <div class="order__basket">
+            <h2 class="order__basket-title">В вашей корзине</h2>
+            <div class="order__basket-box">
+              <div class="order__basket-header">
+                <div class="order__basket-logo"></div>
+                <div class="order__basket-info">Состав пакета</div>
+              </div>
+              <h3 class="order__basket-mid-title">НеБЕСит Middle</h3>
+              <p class="order__basket-content">Инициатива не заставит себя ждать, социальная привлекательность возрастет
+                до небес, а задачи наполнятся творчеством</p>
+              <ul class="order__basket-advantages-list">
+                <li class="order__basket-advantages-item">к инициативности</li>
+                <li class="order__basket-advantages-item">уровней социальной привлекательности</li>
+                <li class="order__basket-advantages-item">посещение творческой музы</li>
+              </ul>
+              <p class="order__basket-price"><span class="order__basket-full-price"></span></p>
+              <p class="order__basket-consent">Нажимая кнопку, вы соглашаетесь с условиями сервиса, и выражаете
+                решимость изменить свою жизнь к лучшему</p>
+              <button class="order__basket-button">Отправить заказ</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал мы тоже сверстали, извините 😉 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__inner-info">
+          <a class="footer__logo-link" href="#" aria-label="Переход на главную страницу">
+            <svg class="footer__logo" width="145" height="40" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <div class="footer__copyright">
+            <svg class="footer__copyright-icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-copy"></use>
+            </svg>
+            <span class="footer__copyright-text">Все права защищены и&nbsp;принадлежат народу</span>
+          </div>
+        </div>
+        <ul class="socials">
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Ссылка на ВК">
+              <svg class="socials__icon" width="19" height="11" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Ссылка на Ютуб">
+              <svg class="socials__icon" width="16" height="12" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Ссылка на ОК">
+              <svg class="socials__icon" width="12" height="19" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-ok"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Ссылка на Телеграм">
+              <svg class="socials__icon" width="17" height="15" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-tg"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

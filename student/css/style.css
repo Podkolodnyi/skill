@@ -8,13 +8,7 @@
 /* Blocks */
 /* ------------------------------------ */
 @import "./blocks/header.css";
+@import "./blocks/animation.css";
 @import "./blocks/footer.css";
-@import "./blocks/tariffs.css";
-@import "./blocks/tariff-card.css";
-@import "./blocks/custom-radio-payment.css";
+@import "./blocks/socials.css";
 @import "./blocks/order.css";
-@import "./blocks/custom-input.css";
-@import "./blocks/custom-radio.css";
-@import "./blocks/custom-checkbox.css";
-@import "./blocks/links.css";
-@import "./blocks/btn.css";
