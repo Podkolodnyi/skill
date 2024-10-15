@@ -1,0 +1,28 @@
+.custom-input {
+    padding: 10px 20px 12px;
+    background: #FFFFFF26;
+    border-radius: 8px;
+    min-height: 70px;
+}
+
+.custom-input__field {
+    background: none;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.custom-input__field::placeholder {
+    color: #FFFFFF66;
+}
+
+.custom-input__label {
+    color: #FFFFFFB2;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
