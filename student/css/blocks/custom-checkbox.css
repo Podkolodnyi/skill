@@ -51,7 +51,7 @@
     display: block;
 }
 
-.custom-checkbox__field:focus+.custom-checkbox__label,
+.custom-checkbox__field:focus-visible+.custom-checkbox__label,
 .custom-checkbox__field:hover+.custom-checkbox__label {
     color: #87F29A;
 }

@@ -48,7 +48,7 @@
     color: #FFFFFF66;
 }
 
-.custom-input__field:focus+.custom-input__sibling, .custom-input__label:hover .custom-input__sibling {
+.custom-input__field:focus-visible+.custom-input__sibling, .custom-input__label:hover .custom-input__sibling {
     background: #6FB58226;
     box-shadow: 0px 10px 40px 0px #0000001F;
 }
