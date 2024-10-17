@@ -1,8 +1,35 @@
 .custom-input {
-    padding: 10px 20px 12px;
+    min-height: 70px;
+    min-width: 340px;
+    position: relative;
+}
+
+.custom-input__sibling {
+    top: 0;
+    left: 0;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
     background: #FFFFFF26;
     border-radius: 8px;
-    min-height: 70px;
+    pointer-events: none;
+}
+
+.custom-input__label {
+    display: block;
+    padding: 10px 20px 12px;
+    min-height: 100%;
+    min-width: 100%;
+    cursor: pointer;
+}
+
+.custom-input__title {
+    display: block;
+    color: #FFFFFFB2;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 8px;
 }
 
 .custom-input__field {
@@ -13,16 +40,15 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
+    padding: 0;
+    cursor: pointer;
 }
 
 .custom-input__field::placeholder {
     color: #FFFFFF66;
 }
 
-.custom-input__label {
-    color: #FFFFFFB2;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 16px;
-    margin-bottom: 8px;
+.custom-input__field:focus+.custom-input__sibling, .custom-input__label:hover .custom-input__sibling {
+    background: #6FB58226;
+    box-shadow: 0px 10px 40px 0px #0000001F;
 }

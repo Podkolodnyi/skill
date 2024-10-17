@@ -57,23 +57,35 @@
               <legend class="order__contacts-title">Контактные данные</legend>
               <div class="order__contacts-wrapper">
                 <div class="custom-input">
-                  <label class="custom-input__label" for="name">Имя</label>
-                  <input class="custom-input__field" type="text" id="name" name="name" required>
-                </div>
+                  <label class="custom-input__label" for="name">
+                    <span class="custom-input__title">Имя</span>
+                    <input class="custom-input__field" type="text" id="name" name="name" required>
+                    <div class="custom-input__sibling"></div>
+                  </label>       
+                </div>    
                 <div class="custom-input">
-                  <label class="custom-input__label" for="phone">Номер телефона</label>
-                  <input class="custom-input__field" type="tel" id="phone" name="phone" placeholder="+7 000 000-00-00"
+                  <label class="custom-input__label" for="phone">
+                    <span class="custom-input__title">Номер телефона</span>
+                    <input class="custom-input__field" type="tel" id="phone" name="phone" placeholder="+7 000 000-00-00"
                     required>
+                    <div class="custom-input__sibling"></div>
+                  </label>
                 </div>
-                <div class="custom-checkbox">
+                <div class="custom-checkbox ">
                   <input class="custom-checkbox__field" type="checkbox" id="news-mail" name="news-mail"
                     value="news-mail">
                   <label class="custom-checkbox__label" for="news-mail">Получать новости сервиса</label>
+                  <svg class="custom-checkbox__check-icon" width="7.5" height="6" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
                   <p class="custom-checkbox__text">Сообщения будут приходить не чаще чем один раз в неделю</p>
                 </div>
                 <div class="custom-input">
-                  <label class="custom-input__label" for="email">Электронная почта</label>
-                  <input class="custom-input__field" type="email" id="email" name="email" required>
+                  <label class="custom-input__label" for="email">
+                    <span class="custom-input__title">Электронная почта</span>
+                    <input class="custom-input__field" type="email" id="email" name="email" required>
+                    <div class="custom-input__sibling"></div>
+                  </label>
                 </div>
               </div>
             </fieldset>
@@ -104,20 +116,29 @@
                     <input class="custom-checkbox__field" type="checkbox" id="to-friend" name="to-friend"
                       value="to-friend">
                     <label class="custom-checkbox__label" for="to-friend">Заказываю другу</label>
+                    <svg class="custom-checkbox__check-icon" width="7.5" height="6" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
                     <p class="custom-checkbox__text">Друг получит уведомление от нас на свой номер телефона за час до
                       выезда курьера</p>
                   </li>
                   <li class="custom-checkbox">
                     <input class="custom-checkbox__field" type="checkbox" id="Leave" name="Leave" value="Leave">
                     <label class="custom-checkbox__label" for="Leave">Оставить у двери</label>
+                    <svg class="custom-checkbox__check-icon" width="7.5" height="6" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
                     <p class="custom-checkbox__text">Включите эту опцию, если уверены в безопасности оставленного пакета
                     </p>
                   </li>
                 </ul>
                 <div class="custom-input">
-                  <label class="custom-input__label" for="friend-phone">Номер телефона друга</label>
-                  <input class="custom-input__field" type="tel" id="friend-phone" name="friend-phone"
-                    placeholder="+7 000 000-00-00">
+                  <label class="custom-input__label" for="friend-phone">
+                    <span class="custom-input__title">Номер телефона друга</span>
+                    <input class="custom-input__field" type="tel" id="friend-phone" name="friend-phone"
+                      placeholder="+7 000 000-00-00">
+                    <div class="custom-input__sibling"></div>
+                  </label>
                 </div>
               </div>
             </fieldset>
@@ -147,16 +168,25 @@
                     placeholder="0000 0000 0000 0000">
                 </li>
                 <li class="custom-input">
-                  <label class="custom-input__label" for="card-month">ММ</label>
-                  <input class="custom-input__field" type="number" id="card-month" name="card-info" placeholder="00">
+                  <label class="custom-input__label" for="card-month">
+                    <span class="custom-input__title">ММ</span>
+                    <input class="custom-input__field" type="number" id="card-month" name="card-info" placeholder="00">
+                    <div class="custom-input__sibling"></div>
+                  </label>
                 </li>
                 <li class="custom-input">
-                  <label class="custom-input__label" for="card-year">ГГ</label>
-                  <input class="custom-input__field" type="number" id="card-year" name="card-info" placeholder="00">
+                  <label class="custom-input__label" for="card-year">
+                    <span class="custom-input__title">ГГ</span>
+                    <input class="custom-input__field" type="number" id="card-year" name="card-info" placeholder="00">
+                    <div class="custom-input__sibling"></div>
+                  </label>
                 </li>
                 <li class="custom-input">
-                  <label class="custom-input__label" for="card-cvv">CVV</label>
-                  <input class="custom-input__field" type="number" id="card-cvv" name="card-info" placeholder="000">
+                  <label class="custom-input__label" for="card-cvv">
+                    <span class="custom-input__title">CVV</span>
+                    <input class="custom-input__field" type="number" id="card-cvv" name="card-info" placeholder="000">
+                    <div class="custom-input__sibling"></div>
+                  </label>
                 </li>
               </ul>
               <div class="order__pay-footer">
@@ -164,11 +194,17 @@
                   <input class="custom-checkbox__field" type="checkbox" id="send-check" name="send-check"
                     value="send-check">
                   <label class="custom-checkbox__label" for="send-check">Отправить чек на электронную почту</label>
+                  <svg class="custom-checkbox__check-icon" width="7.5" height="6" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
                   <p class="custom-checkbox__text">Если хотите всё контролировать ;)</p>
                 </div>
                 <div class="custom-input">
-                  <label class="custom-input__label" for="email-2">Электронная почта</label>
-                  <input class="custom-input__field" type="email-2" id="email-2" name="email-2" required>
+                  <label class="custom-input__label" for="email-2">
+                    <span class="custom-input__title">Электронная почта</span>
+                    <input class="custom-input__field" type="email-2" id="email-2" name="email-2" required>
+                    <div class="custom-input__sibling"></div>
+                  </label>
                 </div>
               </div>
             </fieldset>
