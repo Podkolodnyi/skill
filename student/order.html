@@ -49,33 +49,36 @@
     <!-- Оформление заказа -->
     <section class="order">
       <div class="container">
-        <h1 class="order__title"></h1>
-        <p class="order__title-comment"></p>
+        <h1 class="order__title">Оформим заказ</h1>
+        <p class="order__title-comment">Есть люди, которые справляются с этим за 2 минуты</p>
         <form class="order__form">
           <div class="order__info">
             <fieldset class="order__contacts">
-              <legend class="order__contacts-title">Контактные данные</legend>
+              <legend class="order-group-title">Контактные данные</legend>
               <div class="order__contacts-wrapper">
                 <div class="custom-input">
                   <label class="custom-input__label" for="name">
                     <span class="custom-input__title">Имя</span>
                     <input class="custom-input__field" type="text" id="name" name="name" required>
                     <div class="custom-input__sibling"></div>
-                  </label>       
-                </div>    
+                  </label>
+                </div>
                 <div class="custom-input">
                   <label class="custom-input__label" for="phone">
                     <span class="custom-input__title">Номер телефона</span>
                     <input class="custom-input__field" type="tel" id="phone" name="phone" placeholder="+7 000 000-00-00"
-                    required>
+                      required>
                     <div class="custom-input__sibling"></div>
+                    <svg class="custom-input__icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-phone"></use>
+                    </svg>
                   </label>
                 </div>
                 <div class="custom-checkbox ">
                   <input class="custom-checkbox__field" type="checkbox" id="news-mail" name="news-mail"
                     value="news-mail">
                   <label class="custom-checkbox__label" for="news-mail">Получать новости сервиса</label>
-                  <svg class="custom-checkbox__check-icon" width="7.5" height="6" aria-hidden="true">
+                  <svg class="custom-checkbox__check-icon" width="10" height="11" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
                   <p class="custom-checkbox__text">Сообщения будут приходить не чаще чем один раз в неделю</p>
@@ -85,12 +88,16 @@
                     <span class="custom-input__title">Электронная почта</span>
                     <input class="custom-input__field" type="email" id="email" name="email" required>
                     <div class="custom-input__sibling"></div>
+                    <svg class="custom-input__icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-mail"></use>
+                    </svg>
                   </label>
+                  <span class="custom-input__error">Заполните поле</span>
                 </div>
               </div>
             </fieldset>
             <fieldset class="order__delivery">
-              <legend class="order__delivery-title">Способ получения заказа</legend>
+              <legend class="order-group-title">Способ получения заказа</legend>
               <ul class="order__radio-group">
                 <li class="custom-radio">
                   <input class="custom-radio__field" type="radio" id="pickup" name="delivery" value="pickup" required>
@@ -107,8 +114,12 @@
                 </li>
               </ul>
               <div class="custom-textarea">
-                <label class="custom-textarea__label" for="address">Адрес доставки</label>
-                <textarea class="custom-textarea__field" name="address" id="address"></textarea>
+                <label class="custom-textarea__label" for="address">
+                  <span class="custom-textarea__title">Адрес доставки</span>
+                  <textarea class="custom-textarea__field" name="address" id="address"></textarea>
+                  <div class="custom-textarea__sibling"></div>
+                </label>
+                <span class="custom-textarea__error">Заполните поле</span>
               </div>
               <div class="order__delivery-options">
                 <ul class="order__delivery-options-checkboxes">
@@ -138,12 +149,15 @@
                     <input class="custom-input__field" type="tel" id="friend-phone" name="friend-phone"
                       placeholder="+7 000 000-00-00">
                     <div class="custom-input__sibling"></div>
+                    <svg class="custom-input__icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-phone"></use>
+                    </svg>
                   </label>
                 </div>
               </div>
             </fieldset>
             <fieldset class="order__pay">
-              <legend class="order__pay-title">Способ оплаты</legend>
+              <legend class="order-group-title">Способ оплаты</legend>
               <ul class="radio-group">
                 <li class="custom-radio">
                   <input class="custom-radio__field" type="radio" id="card-pay" name="pay-method" value="card-pay"
@@ -204,15 +218,22 @@
                     <span class="custom-input__title">Электронная почта</span>
                     <input class="custom-input__field" type="email-2" id="email-2" name="email-2" required>
                     <div class="custom-input__sibling"></div>
+                    <svg class="custom-input__icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-mail"></use>
+                    </svg>
                   </label>
                 </div>
               </div>
             </fieldset>
             <fieldset class="order__comment">
-              <legend class="order__comment-title">Комментарий к заказу</legend>
+              <legend class="order-group-title">Комментарий к заказу</legend>
               <div class="custom-textarea">
-                <label class="custom-textarea__label" for="comment">Ваш комментарий</label>
-                <textarea class="custom-textarea__field" name="comment" id="comment"></textarea>
+                <label class="custom-textarea__label" for="comment">
+                  <span class="custom-textarea__title">Ваш комментарий</span>
+                  <textarea class="custom-textarea__field" name="comment" id="comment"></textarea>
+                  <div class="custom-textarea__sibling"></div>
+                </label>
+                <span class="custom-textarea__error">Заполните поле</span>
               </div>
             </fieldset>
           </div>

@@ -41,8 +41,8 @@
 
 .custom-checkbox__check-icon {
     position: absolute;
-    top: 10.5px;
-    left: 10.5px;
+    top: 9px;
+    left: 9px;
     color: black;
     display: none;
 }
