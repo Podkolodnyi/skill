@@ -1,7 +1,23 @@
 .custom-input {
-    min-height: 70px;
-    min-width: 340px;
+    height: 70px;
     position: relative;
+    flex-grow: 1;
+}
+
+.custom-input--card-num {
+    min-width: 382px;
+}
+
+.custom-input--card-info {
+    width: 94px;
+}
+
+.custom-input__cards-block {
+    display: flex;
+    gap: 12px;
+    position: absolute;
+    bottom: 12px;
+    right: 20px;
 }
 
 .custom-input__sibling {

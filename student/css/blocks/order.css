@@ -19,6 +19,11 @@
     margin: 0 0 80px;
 }
 
+.order__group {
+    padding: 0;
+    margin: 0 0 60px;
+}
+
 .order-group-title {
     font-family: "Press Start 2P", "Arial", sans-serif;
     font-size: 24px;
@@ -34,11 +39,6 @@
     gap: 80px;
 }
 
-.order__contacts {
-    padding: 0;
-    margin: 0 0 60px;
-}
-
 .order__contacts-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -49,4 +49,26 @@
     display: flex;
     gap: 12px;
     margin-bottom: 40px;
+}
+
+.order__delivery-options {
+    display: flex;
+    gap: 20px;
+}
+
+.order__checkboxes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.order__card-info {
+    display: flex;
+    gap: 12px;
+    margin: 0 0 52px;
+}
+
+.order__pay-footer {
+    display: flex;
+    gap: 20px;
 }

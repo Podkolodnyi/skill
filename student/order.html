@@ -53,7 +53,7 @@
         <p class="order__title-comment">Есть люди, которые справляются с этим за 2 минуты</p>
         <form class="order__form">
           <div class="order__info">
-            <fieldset class="order__contacts">
+            <fieldset class="order__group">
               <legend class="order-group-title">Контактные данные</legend>
               <div class="order__contacts-wrapper">
                 <div class="custom-input">
@@ -96,7 +96,7 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="order__delivery">
+            <fieldset class="order__group">
               <legend class="order-group-title">Способ получения заказа</legend>
               <ul class="order__radio-group">
                 <li class="custom-radio">
@@ -122,7 +122,7 @@
                 <span class="custom-textarea__error">Заполните поле</span>
               </div>
               <div class="order__delivery-options">
-                <ul class="order__delivery-options-checkboxes">
+                <ul class="order__checkboxes-list">
                   <li class="custom-checkbox">
                     <input class="custom-checkbox__field" type="checkbox" id="to-friend" name="to-friend"
                       value="to-friend">
@@ -156,9 +156,9 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="order__pay">
+            <fieldset class="order__group">
               <legend class="order-group-title">Способ оплаты</legend>
-              <ul class="radio-group">
+              <ul class="order__radio-group">
                 <li class="custom-radio">
                   <input class="custom-radio__field" type="radio" id="card-pay" name="pay-method" value="card-pay"
                     required>
@@ -176,29 +176,43 @@
                 </li>
               </ul>
               <ul class="order__card-info">
-                <li class="custom-input">
-                  <label class="custom-input__label" for="card-num">Номер карты</label>
-                  <input class="custom-input__field" type="number" id="card-num" name="card-info"
+                <li class="custom-input custom-input--card-num">
+                  <label class="custom-input__label" for="card-num">
+                    <span class="custom-input__title">Номер карты</span>
+                    <input class="custom-input__field" type="text" id="card-num" name="card-info"
                     placeholder="0000 0000 0000 0000">
+                    <div class="custom-input__cards-block">
+                      <svg class="custom-input__card-icon" width="24" height="24" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-mc"></use>
+                      </svg>
+                      <svg class="custom-input__card-icon" width="24" height="24" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-mir"></use>
+                      </svg>
+                      <svg class="custom-input__card-icon" width="24" height="24" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-visa"></use>
+                      </svg>
+                    </div>
+                    <div class="custom-input__sibling"></div>
+                  </label>
                 </li>
-                <li class="custom-input">
+                <li class="custom-input custom-input--card-info">
                   <label class="custom-input__label" for="card-month">
                     <span class="custom-input__title">ММ</span>
-                    <input class="custom-input__field" type="number" id="card-month" name="card-info" placeholder="00">
+                    <input class="custom-input__field" type="text" id="card-month" name="card-info" placeholder="00">
                     <div class="custom-input__sibling"></div>
                   </label>
                 </li>
-                <li class="custom-input">
+                <li class="custom-input custom-input--card-info">
                   <label class="custom-input__label" for="card-year">
                     <span class="custom-input__title">ГГ</span>
-                    <input class="custom-input__field" type="number" id="card-year" name="card-info" placeholder="00">
+                    <input class="custom-input__field" type="text" id="card-year" name="card-info" placeholder="00">
                     <div class="custom-input__sibling"></div>
                   </label>
                 </li>
-                <li class="custom-input">
+                <li class="custom-input custom-input--card-info">
                   <label class="custom-input__label" for="card-cvv">
                     <span class="custom-input__title">CVV</span>
-                    <input class="custom-input__field" type="number" id="card-cvv" name="card-info" placeholder="000">
+                    <input class="custom-input__field" type="text" id="card-cvv" name="card-info" placeholder="000">
                     <div class="custom-input__sibling"></div>
                   </label>
                 </li>
@@ -225,7 +239,7 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="order__comment">
+            <fieldset class="order__group">
               <legend class="order-group-title">Комментарий к заказу</legend>
               <div class="custom-textarea">
                 <label class="custom-textarea__label" for="comment">
