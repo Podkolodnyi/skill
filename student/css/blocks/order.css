@@ -24,7 +24,7 @@
     margin: 0 0 60px;
 }
 
-.order-group-title {
+.order__group-title {
     font-family: "Press Start 2P", "Arial", sans-serif;
     font-size: 24px;
     font-weight: 400;
@@ -71,4 +71,119 @@
 .order__pay-footer {
     display: flex;
     gap: 20px;
+}
+
+.order__basket {
+    min-width: 420px;
+}
+
+.order__basket-box {
+    background: #FFFFFF26;
+    border-radius: 8px;
+    padding: 24px 40px 40px;
+}
+
+.order__basket-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.order__basket-mid-title {
+    font-family: "Press Start 2P", "Arial", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0 0 12px;
+}
+
+.order__basket-mid-title-green {
+    color: #87F29A;
+}
+
+.order__basket-content {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #FFFFFFCC;
+    margin: 0 0 24px;
+}
+
+.order__basket-advantages-list {
+    margin: 0 0 40px;
+}
+
+.order__basket-advantages-item {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.order__basket-advantages-num {
+    font-weight: 700;
+    color: #000000;
+    background: #87F29A;
+    border-radius: 12px;
+    padding: 2px 8px;
+    margin: 0 8px 0 0;
+}
+
+.order__basket-price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-family: "Press Start 2P", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 40px;
+}
+
+.order__basket-full-price {
+    display: block;
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 34px 0 0;
+}
+
+.order__basket-real-price {
+    display: block;
+}
+
+.order__basket-full-price::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: -3px;
+    width: 104px;
+    border: 1px solid #FF7575;
+}
+
+.order__basket-consent {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 0 24px;
+}
+
+.order__basket-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px 60px;
+    color: #000000;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+    background: #87F29A;
+    border-radius: 8px;
+    border: none;
+}
+
+.order__basket-button-tg {
+    color: #000000;
 }

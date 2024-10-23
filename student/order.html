@@ -54,13 +54,13 @@
         <form class="order__form">
           <div class="order__info">
             <fieldset class="order__group">
-              <legend class="order-group-title">Контактные данные</legend>
+              <legend class="order__group-title">Контактные данные</legend>
               <div class="order__contacts-wrapper">
                 <div class="custom-input">
                   <label class="custom-input__label" for="name">
                     <span class="custom-input__title">Имя</span>
                     <input class="custom-input__field" type="text" id="name" name="name" required>
-                    <div class="custom-input__sibling"></div>
+                    <span class="custom-input__sibling"></span>
                   </label>
                 </div>
                 <div class="custom-input">
@@ -68,7 +68,7 @@
                     <span class="custom-input__title">Номер телефона</span>
                     <input class="custom-input__field" type="tel" id="phone" name="phone" placeholder="+7 000 000-00-00"
                       required>
-                    <div class="custom-input__sibling"></div>
+                    <span class="custom-input__sibling"></span>
                     <svg class="custom-input__icon" width="24" height="24" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-phone"></use>
                     </svg>
@@ -87,7 +87,7 @@
                   <label class="custom-input__label" for="email">
                     <span class="custom-input__title">Электронная почта</span>
                     <input class="custom-input__field" type="email" id="email" name="email" required>
-                    <div class="custom-input__sibling"></div>
+                    <span class="custom-input__sibling"></span>
                     <svg class="custom-input__icon" width="24" height="24" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-mail"></use>
                     </svg>
@@ -97,7 +97,7 @@
               </div>
             </fieldset>
             <fieldset class="order__group">
-              <legend class="order-group-title">Способ получения заказа</legend>
+              <legend class="order__group-title">Способ получения заказа</legend>
               <ul class="order__radio-group">
                 <li class="custom-radio">
                   <input class="custom-radio__field" type="radio" id="pickup" name="delivery" value="pickup" required>
@@ -117,7 +117,7 @@
                 <label class="custom-textarea__label" for="address">
                   <span class="custom-textarea__title">Адрес доставки</span>
                   <textarea class="custom-textarea__field" name="address" id="address"></textarea>
-                  <div class="custom-textarea__sibling"></div>
+                  <span class="custom-textarea__sibling"></span>
                 </label>
                 <span class="custom-textarea__error">Заполните поле</span>
               </div>
@@ -148,7 +148,7 @@
                     <span class="custom-input__title">Номер телефона друга</span>
                     <input class="custom-input__field" type="tel" id="friend-phone" name="friend-phone"
                       placeholder="+7 000 000-00-00">
-                    <div class="custom-input__sibling"></div>
+                    <span class="custom-input__sibling"></span>
                     <svg class="custom-input__icon" width="24" height="24" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-phone"></use>
                     </svg>
@@ -157,7 +157,7 @@
               </div>
             </fieldset>
             <fieldset class="order__group">
-              <legend class="order-group-title">Способ оплаты</legend>
+              <legend class="order__group-title">Способ оплаты</legend>
               <ul class="order__radio-group">
                 <li class="custom-radio">
                   <input class="custom-radio__field" type="radio" id="card-pay" name="pay-method" value="card-pay"
@@ -181,7 +181,7 @@
                     <span class="custom-input__title">Номер карты</span>
                     <input class="custom-input__field" type="text" id="card-num" name="card-info"
                     placeholder="0000 0000 0000 0000">
-                    <div class="custom-input__cards-block">
+                    <span class="custom-input__cards-block">
                       <svg class="custom-input__card-icon" width="24" height="24" aria-hidden="true">
                         <use xlink:href="images/sprite.svg#icon-mc"></use>
                       </svg>
@@ -191,29 +191,29 @@
                       <svg class="custom-input__card-icon" width="24" height="24" aria-hidden="true">
                         <use xlink:href="images/sprite.svg#icon-visa"></use>
                       </svg>
-                    </div>
-                    <div class="custom-input__sibling"></div>
+                    </span>
+                    <span class="custom-input__sibling"></span>
                   </label>
                 </li>
                 <li class="custom-input custom-input--card-info">
                   <label class="custom-input__label" for="card-month">
                     <span class="custom-input__title">ММ</span>
                     <input class="custom-input__field" type="text" id="card-month" name="card-info" placeholder="00">
-                    <div class="custom-input__sibling"></div>
+                    <span class="custom-input__sibling"></span>
                   </label>
                 </li>
                 <li class="custom-input custom-input--card-info">
                   <label class="custom-input__label" for="card-year">
                     <span class="custom-input__title">ГГ</span>
                     <input class="custom-input__field" type="text" id="card-year" name="card-info" placeholder="00">
-                    <div class="custom-input__sibling"></div>
+                    <span class="custom-input__sibling"></span>
                   </label>
                 </li>
                 <li class="custom-input custom-input--card-info">
                   <label class="custom-input__label" for="card-cvv">
                     <span class="custom-input__title">CVV</span>
                     <input class="custom-input__field" type="text" id="card-cvv" name="card-info" placeholder="000">
-                    <div class="custom-input__sibling"></div>
+                    <span class="custom-input__sibling"></span>
                   </label>
                 </li>
               </ul>
@@ -228,10 +228,10 @@
                   <p class="custom-checkbox__text">Если хотите всё контролировать ;)</p>
                 </div>
                 <div class="custom-input">
-                  <label class="custom-input__label" for="email-2">
+                  <label class="custom-input__label" for="email2">
                     <span class="custom-input__title">Электронная почта</span>
-                    <input class="custom-input__field" type="email-2" id="email-2" name="email-2" required>
-                    <div class="custom-input__sibling"></div>
+                    <input class="custom-input__field" type="email" id="email2" name="email2" required>
+                    <span class="custom-input__sibling"></span>
                     <svg class="custom-input__icon" width="24" height="24" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-mail"></use>
                     </svg>
@@ -240,12 +240,12 @@
               </div>
             </fieldset>
             <fieldset class="order__group">
-              <legend class="order-group-title">Комментарий к заказу</legend>
+              <legend class="order__group-title">Комментарий к заказу</legend>
               <div class="custom-textarea">
                 <label class="custom-textarea__label" for="comment">
                   <span class="custom-textarea__title">Ваш комментарий</span>
                   <textarea class="custom-textarea__field" name="comment" id="comment"></textarea>
-                  <div class="custom-textarea__sibling"></div>
+                  <span class="custom-textarea__sibling"></span>
                 </label>
                 <span class="custom-textarea__error">Заполните поле</span>
               </div>
@@ -255,21 +255,26 @@
             <h2 class="order__basket-title">В вашей корзине</h2>
             <div class="order__basket-box">
               <div class="order__basket-header">
-                <div class="order__basket-logo"></div>
+                <img class="order__basket-img" src="./images/green-smile.png" alt="green-smile" height="165" width="140">
                 <div class="order__basket-info">Состав пакета</div>
               </div>
-              <h3 class="order__basket-mid-title">НеБЕСит Middle</h3>
+              <h3 class="order__basket-mid-title">Не<span class="order__basket-mid-title-green">БЕС</span>ит Middle</h3>
               <p class="order__basket-content">Инициатива не заставит себя ждать, социальная привлекательность возрастет
                 до небес, а задачи наполнятся творчеством</p>
               <ul class="order__basket-advantages-list">
-                <li class="order__basket-advantages-item">к инициативности</li>
-                <li class="order__basket-advantages-item">уровней социальной привлекательности</li>
-                <li class="order__basket-advantages-item">посещение творческой музы</li>
+                <li class="order__basket-advantages-item"><span class="order__basket-advantages-num">+150%</span>к инициативности</li>
+                <li class="order__basket-advantages-item"><span class="order__basket-advantages-num">+10</span>уровней социальной привлекательности</li>
+                <li class="order__basket-advantages-item"><span class="order__basket-advantages-num">+1</span>посещение творческой музы</li>
               </ul>
-              <p class="order__basket-price"><span class="order__basket-full-price"></span></p>
+              <div class="order__basket-price"><span class="order__basket-full-price">6 666 ₽</span><span class="order__basket-real-price">5 000 ₽</span></div>
               <p class="order__basket-consent">Нажимая кнопку, вы соглашаетесь с условиями сервиса, и выражаете
                 решимость изменить свою жизнь к лучшему</p>
-              <button class="order__basket-button">Отправить заказ</button>
+              <button class="order__basket-button">
+                <span class="order__basket-button-text">Отправить заказ</span>
+                <svg class="order__basket-button-tg" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-button-tg"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </form>
