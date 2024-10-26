@@ -9,7 +9,7 @@
     font-weight: 400;
     line-height: 48px;
     text-transform: uppercase;
-    margin: 0 0 24px;
+    margin: 80px 0 24px;
 }
 
 .order__title-comment {
@@ -22,6 +22,10 @@
 .order__group {
     padding: 0;
     margin: 0 0 60px;
+}
+
+.order__group--last {
+    margin: 0 0 40px;
 }
 
 .order__group-title {
@@ -65,7 +69,7 @@
 .order__card-info {
     display: flex;
     gap: 12px;
-    margin: 0 0 52px;
+    margin: 0 0 40px;
 }
 
 .order__pay-footer {
@@ -74,19 +78,58 @@
 }
 
 .order__basket {
+    align-self: flex-start;
+    height: auto;
     min-width: 420px;
+    position: sticky;
+    top: 32px;
+}
+
+.order__basket-title {
+    font-family: "Press Start 2P", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFFCC;
+    margin: 0 0 40px;
 }
 
 .order__basket-box {
     background: #FFFFFF26;
     border-radius: 8px;
     padding: 24px 40px 40px;
+    border: none;
 }
 
 .order__basket-header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 16px;
+}
+
+.order__basket-info {
+    height: auto;
+    align-self: flex-start;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 4px 16px;
+    border: 1px solid #FFFFFF;
+    border-radius: 14px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.order__basket-info:hover, .order__basket-info:focus {
+    color: #87F29A;
+    border-color: #87F29A;
+}
+
+.order__basket-info-logo {
+    color: inherit;
 }
 
 .order__basket-mid-title {
@@ -105,6 +148,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
+
     color: #FFFFFFCC;
     margin: 0 0 24px;
 }
@@ -181,9 +225,20 @@
     line-height: 32px;
     background: #87F29A;
     border-radius: 8px;
-    border: none;
+    border: 1px solid #00000066;
+    cursor: pointer;
+}
+
+.order__basket-button:hover {
+    background: #78DF8A;
+}
+
+.order__basket-button:disabled {
+    background: #FFFFFF;
+    color: #00000066;
+
 }
 
 .order__basket-button-tg {
-    color: #000000;
+    color: inherit;
 }
