@@ -1,5 +1,6 @@
 .order {
     font-family: "Play", "Arial", sans-serif;
+    margin: 0 0 80px;
 }
 
 .order__title {
@@ -25,13 +26,12 @@
 }
 
 .order__group--last {
-    margin: 0 0 40px;
+    margin: 0;
 }
 
 .order__group-title {
     font-family: "Press Start 2P", "Arial", sans-serif;
     font-size: 24px;
-    font-weight: 400;
     line-height: 24px;
     color: #FFFFFFCC;
     margin: 0 0 40px;
@@ -47,6 +47,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px 20px;
+    align-items: start;
 }
 
 .order__radio-group {
@@ -56,8 +57,11 @@
 }
 
 .order__delivery-options {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
+    margin-top: 40px;
+    align-items: start;
 }
 
 .order__checkboxes-list {
@@ -70,11 +74,14 @@
     display: flex;
     gap: 12px;
     margin: 0 0 40px;
+    align-items: start;
 }
 
 .order__pay-footer {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
+    align-items: start;
 }
 
 .order__basket {

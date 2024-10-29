@@ -1,16 +1,13 @@
 .custom-input {
-    height: 70px;
-    width: 340px;
     position: relative;
-    flex-grow: 1;
-    flex-shrink: 0;
 }
 
-.custom-input--card-num {
+.custom-input--card-num .custom-input__field {
+    padding: 34px 139px 12px 20px;
     min-width: 382px;
 }
 
-.custom-input--card-info {
+.custom-input--card-info .custom-input__field {
     width: 94px;
 }
 
@@ -22,32 +19,21 @@
     right: 20px;
 }
 
-.custom-input__sibling {
-    top: 0;
-    left: 0;
-    position: absolute;
-    min-width: 100%;
-    min-height: 100%;
-    background: #FFFFFF26;
-    border-radius: 8px;
-    pointer-events: none;
-}
-
 .custom-input__label {
     display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
     padding: 10px 20px 12px;
-    min-height: 100%;
-    min-width: 100%;
-    cursor: pointer;
-}
-
-.custom-input__title {
-    display: block;
+    height: 100%;
+    width: 100%;
     color: #FFFFFFB2;
+    background: #FFFFFF26;
+    border-radius: 8px;
     font-size: 12px;
     font-weight: 700;
     line-height: 16px;
-    margin-bottom: 8px;
+    cursor: pointer;
 }
 
 .custom-input__field {
@@ -58,7 +44,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
-    padding: 0 50px 0 0;
+    padding: 34px 54px 12px 20px;
     cursor: pointer;
     min-width: 100%;
 }
@@ -67,6 +53,7 @@
     position: absolute;
     bottom: 12px;
     right: 20px;
+    color: #FFFFFF66;
 }
 
 .custom-input__error {
@@ -75,34 +62,50 @@
     font-weight: 400;
     line-height: 16px;
     color: #FF7575;
-    margin-top: 8px;
 }
 
 .custom-input__field::placeholder {
     color: #FFFFFF66;
 }
 
-.custom-input__field:focus-visible+.custom-input__sibling, .custom-input__label:hover .custom-input__sibling {
+.custom-input--error .custom-input__error {
+    display: block;
+    cursor: default;
+}
+
+.custom-input--error .custom-input__label {
+    height: calc(100% - 24px);
+    background: #FF757526;
+}
+
+.custom-input--error .custom-input__field {
+    margin-bottom: 8px;
+}
+
+.custom-input--error .custom-input__icon {
+    bottom: 36px;
+}
+
+.custom-input--error .custom-input__label, .custom-input--error .custom-input__icon {
+    color: #FF7575;
+}
+
+.custom-input__field:focus-visible+.custom-input__label+.custom-input__icon, .custom-input__field:hover+.custom-input__label+.custom-input__icon {
+    color: #87F29A;
+}
+
+.custom-input__field:focus-visible+.custom-input__label, .custom-input__label:hover {
     background: #6FB58226;
     box-shadow: 0px 10px 40px 0px #0000001F;
 }
 
-.custom-input__field:focus-visible+.custom-input__sibling+.custom-input__icon, .custom-input__field:hover+.custom-input__sibling+.custom-input__icon {
-    color: #87F29A;
+.custom-input__field:disabled+.custom-input__label+.custom-input__icon, .custom-input__field:disabled+.custom-input__label+.custom-input__icon {
+    color: #FFFFFF66;
 }
 
-.custom-input__field:disabled+.custom-input__sibling {
+.custom-input__field:disabled+.custom-input__label {
     background: #FFFFFF0D;
-}
-
-.custom-input--error .custom-input__sibling {
-    background: #FF757526;
-}
-
-.custom-input--error .custom-input__title, .custom-input--error .custom-input__icon {
-    color: #FF7575;
-}
-
-.custom-input--error .custom-input__error {
-    display: block;
+    color: #FFFFFFB2;
+    box-shadow: none;
+    cursor: default;
 }
