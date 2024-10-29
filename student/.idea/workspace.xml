@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb575649-1476-49c8-a150-83572a94548e" name="Changes" comment="2.8" />
+    <list default="true" id="eb575649-1476-49c8-a150-83572a94548e" name="Changes" comment="2.8">
+      <change afterPath="$PROJECT_DIR$/css/blocks/basket.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/blocks/custom-input.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/blocks/custom-input.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/blocks/custom-textarea.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/blocks/custom-textarea.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/blocks/order.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/blocks/order.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/order.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +46,7 @@
       <workItem from="1729099317001" duration="2831000" />
       <workItem from="1729102192162" duration="3695000" />
       <workItem from="1729942008810" duration="8690000" />
+      <workItem from="1730220386716" duration="4356000" />
     </task>
     <task id="LOCAL-00001" summary="1.94">
       <created>1727270292632</created>

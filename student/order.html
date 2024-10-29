@@ -106,11 +106,8 @@
                 </li>
               </ul>
               <div class="custom-textarea">
-                <label class="custom-textarea__label" for="address">
-                  <span class="custom-textarea__title">Адрес доставки</span>
-                  <textarea class="custom-textarea__field" name="address" id="address"></textarea>
-                  <span class="custom-textarea__sibling"></span>
-                </label>
+                <textarea class="custom-textarea__field" name="address" id="address"></textarea>
+                <label class="custom-textarea__label" for="address">Адрес доставки</label>
                 <span class="custom-textarea__error">Заполните поле</span>
               </div>
               <div class="order__delivery-options">
@@ -119,7 +116,7 @@
                     <input class="custom-checkbox__field" type="checkbox" id="to-friend" name="to-friend"
                       value="to-friend">
                     <label class="custom-checkbox__label" for="to-friend">Заказываю другу</label>
-                    <svg class="custom-checkbox__check-icon" width="7.5" height="6" aria-hidden="true">
+                    <svg class="custom-checkbox__check-icon" width="10" height="11" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-check"></use>
                     </svg>
                     <p class="custom-checkbox__text">Друг получит уведомление от&nbsp;нас на&nbsp;свой номер телефона
@@ -129,7 +126,7 @@
                   <li class="custom-checkbox">
                     <input class="custom-checkbox__field" type="checkbox" id="Leave" name="Leave" value="Leave">
                     <label class="custom-checkbox__label" for="Leave">Оставить у&nbsp;двери</label>
-                    <svg class="custom-checkbox__check-icon" width="7.5" height="6" aria-hidden="true">
+                    <svg class="custom-checkbox__check-icon" width="10" height="11" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-check"></use>
                     </svg>
                     <p class="custom-checkbox__text">Включите эту опцию, если уверены в&nbsp;безопасности оставленного
@@ -206,7 +203,7 @@
                   <input class="custom-checkbox__field" type="checkbox" id="send-check" name="send-check"
                     value="send-check">
                   <label class="custom-checkbox__label" for="send-check">Отправить чек на&nbsp;электронную почту</label>
-                  <svg class="custom-checkbox__check-icon" width="7.5" height="6" aria-hidden="true">
+                  <svg class="custom-checkbox__check-icon" width="10" height="11" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
                   <p class="custom-checkbox__text">Если хотите всё контролировать ;)</p>
@@ -224,48 +221,44 @@
             <fieldset class="order__group order__group--last">
               <legend class="order__group-title">Комментарий к&nbsp;заказу</legend>
               <div class="custom-textarea">
-                <label class="custom-textarea__label" for="comment">
-                  <span class="custom-textarea__title">Ваш комментарий</span>
-                  <textarea class="custom-textarea__field" name="comment" id="comment"></textarea>
-                  <span class="custom-textarea__sibling"></span>
-                </label>
+                <textarea class="custom-textarea__field" name="comment" id="comment"></textarea>
+                <label class="custom-textarea__label" for="comment">Ваш комментарий</label>
                 <span class="custom-textarea__error">Заполните поле</span>
               </div>
             </fieldset>
           </div>
-          <div class="order__basket">
-            <h2 class="order__basket-title">В&nbsp;вашей корзине</h2>
-            <div class="order__basket-box">
-              <div class="order__basket-header">
-                <img class="order__basket-img" src="./images/green-smile.png" alt="green-smile" height="165"
+          <div class="basket">
+            <h2 class="basket-title">В&nbsp;вашей корзине</h2>
+            <div class="basket-box">
+              <div class="basket-header">
+                <img class="basket-img" src="./images/green-smile.png" alt="green-smile" height="165"
                   width="140">
-                <a class="order__basket-info" aria-label="Состав пакета">
-                  <span class="order__basket-info-text">Состав пакета</span>
-                  <svg class="order__basket-info-logo" width="16" height="16" aria-hidden="true">
+                <a class="basket-info" aria-label="Состав пакета">
+                  <span class="basket-info-text">Состав пакета</span>
+                  <svg class="basket-info-logo" width="16" height="16" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-i"></use>
                   </svg>
                 </a>
               </div>
-              <h3 class="order__basket-mid-title">Не<span class="order__basket-mid-title-green">БЕС</span>ит Middle</h3>
-              <p class="order__basket-content">Инициатива не&nbsp;заставит себя ждать, социальная привлекательность
-                возрастет
-                до&nbsp;небес, а&nbsp;задачи наполнятся творчеством</p>
-              <ul class="order__basket-advantages-list">
-                <li class="order__basket-advantages-item"><span class="order__basket-advantages-num">+150%</span>к
+              <h3 class="basket-mid-title">Не<span class="basket-mid-title-green">БЕС</span>ит Middle</h3>
+              <p class="basket-content">Инициатива не&nbsp;заставит себя ждать, социальная привлекательность
+                возрастет до небес, а&nbsp;задачи наполнятся творчеством</p>
+              <ul class="basket-advantages-list">
+                <li class="basket-advantages-item"><span class="basket-advantages-num">+150%</span>к
                   инициативности</li>
-                <li class="order__basket-advantages-item"><span class="order__basket-advantages-num">+10</span>уровней
+                <li class="basket-advantages-item"><span class="basket-advantages-num">+10</span>уровней
                   социальной привлекательности</li>
-                <li class="order__basket-advantages-item"><span class="order__basket-advantages-num">+1</span>посещение
+                <li class="basket-advantages-item"><span class="basket-advantages-num">+1</span>посещение
                   творческой музы</li>
               </ul>
-              <div class="order__basket-price"><span class="order__basket-full-price">6&nbsp;666 ₽</span><span
-                  class="order__basket-real-price">5&nbsp;000&nbsp;₽</span></div>
-              <p class="order__basket-consent">Нажимая кнопку, вы&nbsp;соглашаетесь с&nbsp;условиями сервиса,
+              <div class="basket-price"><span class="basket-full-price">6&nbsp;666 ₽</span><span
+                  class="basket-real-price">5&nbsp;000&nbsp;₽</span></div>
+              <p class="basket-consent">Нажимая кнопку, вы&nbsp;соглашаетесь с&nbsp;условиями сервиса,
                 и&nbsp;выражаете
                 решимость изменить свою жизнь к&nbsp;лучшему</p>
-              <button class="order__basket-button" disabled>
-                <span class="order__basket-button-text">Отправить заказ</span>
-                <svg class="order__basket-button-tg" width="20" height="20" aria-hidden="true">
+              <button class="basket-button" disabled type="submit">
+                <span class="basket-button-text">Отправить заказ</span>
+                <svg class="basket-button-tg" width="20" height="20" aria-hidden="true">
                   <use xlink:href="images/sprite.svg#icon-button-tg"></use>
                 </svg>
               </button>
