@@ -1,0 +1,53 @@
+.custom-radio {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.custom-radio__field {
+    display: none;
+}
+
+.custom-radio__label {
+    color: #FFFFFFCC;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    padding-left: 48px;
+}
+
+.custom-radio__label:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF26;
+    border-radius: 100px;
+}
+
+.custom-radio__icon {
+    display: none;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 30px;
+    height: 30px;
+    background: #87F29A;
+    padding: 9px 9px;
+    border-radius: 100px;
+}
+
+.custom-radio__field:checked+.custom-radio__label {
+    color: #FFFFFF;
+}
+
+.custom-radio__field:checked+.custom-radio__label+.custom-radio__icon {
+    display: block;
+}
+
+.custom-radio__field:focus-visible+.custom-radio__label, .custom-radio__field:hover+.custom-radio__label {
+    color: #87F29A;
+}
