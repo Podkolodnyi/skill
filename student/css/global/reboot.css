@@ -10,7 +10,7 @@ body {
   font-family: "Play", "Arial", sans-serif;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.8);
-  background-color: #121C25;
+  background-color: #000000;
 }
 
 img {
@@ -27,14 +27,4 @@ a {
 
 textarea {
   resize: none;
-}
-
-fieldset {
-  border: none;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
