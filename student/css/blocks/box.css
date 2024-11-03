@@ -1,6 +1,6 @@
 .box__wrapper {
     max-width: 1440px;
-    margin: auto;
+    margin: 0 auto;
     padding: 80px 120px;
 }
 
@@ -47,15 +47,14 @@
     margin: 0;
 }
 
-.box--questions .box__wrapper {
+.box--questions .box__wrapper{
     padding: 0 120px 80px;
+}
+
+.box--questions .box__body {
     display: grid;
     grid-template-columns: 1fr 152px 1fr;
     gap: 28px 24px;
-}
-
-.box--questions .box__title {
-    grid-column: span 3;
 }
 
 .box__group--check {
@@ -66,12 +65,18 @@
     background: #FFFFFF;
 }
 
-.box--package .box__wrapper {
+.box--package {
+    position: relative;
+}
+
+.box--package {
+    color: #000000;
+}
+
+.box--package .box__body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 27px;
-    color: #000000;
-    position: relative;
 }
 
 .box__vector {
@@ -80,11 +85,26 @@
     left: calc(50% - 36px);
 }
 
-.box--package .box__title {
-    grid-column: span 3;
-}
-
 .box--package .box__title-num {
     color: #87F29A;
     background: #000000;
+}
+
+.box--delivery .box__body {
+    display: grid;
+    grid-template-columns: 1fr 286px;
+    gap: 40px;
+}
+
+.box--delivery .box__group {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.box__group-input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin: 0 0 24px;
 }

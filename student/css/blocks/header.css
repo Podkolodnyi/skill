@@ -130,7 +130,9 @@
 }
 
 .header__burger {
-  position: absolute;
+  position: fixed;
+  background: #87F29A;
+  border-radius: 36px;
   top: 32px;
   right: 32px;
   display: flex;
@@ -139,7 +141,6 @@
   width: 64px;
   height: 64px;
   padding: 0;
-  background-color: transparent;
   border: none;
   cursor: pointer;
 }

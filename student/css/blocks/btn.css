@@ -12,3 +12,18 @@
 .btn:hover, .btn:focus-visible {
     border: 1px solid #000000
 }
+
+.btn--submit {
+    background: #87F29A;
+    font-family: "Press Start 2P", "Arial", sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 40px;
+    border: none;
+}
+
+.btn--submit:hover, .btn--submit:focus-visible {
+    background: #78DF8A;
+    border: none;
+
+}

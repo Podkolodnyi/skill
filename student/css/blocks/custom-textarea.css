@@ -1,0 +1,50 @@
+.custom-textarea {
+    position: relative;
+}
+
+.custom-textarea__field {
+    display: block;
+    position: relative;
+    padding: 16px 16px 16px 52px;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    min-height: 128px;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.custom-textarea__field::placeholder {
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF66;
+}
+
+.custom-textarea__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF26;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.custom-textarea__logo {
+    position: absolute;
+    top: 19px;
+    left: 18px;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+.custom-textarea__field:hover+.custom-textarea__label, .custom-textarea__field:focus-visible+.custom-textarea__label {
+    background: #6FB58226;
+}
+
+.custom-textarea__field:hover+.custom-textarea__label+.custom-textarea__logo, .custom-textarea__field:focus-visible+.custom-textarea__label+.custom-textarea__logo {
+    color: #87F29A;
+}

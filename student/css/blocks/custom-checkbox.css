@@ -1,7 +1,7 @@
 .custom-checkbox {
     position: relative;
-    display: flex;
-    align-items: center;
+    display: block;
+    cursor: pointer;
 }
 
 .custom-checkbox__field {
@@ -9,11 +9,13 @@
 }
 
 .custom-checkbox__label {
+    display: block;
     color: #FFFFFFCC;
     font-size: 22px;
     font-weight: 400;
     line-height: 32px;
     padding-left: 48px;
+    cursor: pointer;
 }
 
 .custom-checkbox__label:before {
@@ -21,7 +23,7 @@
     display: block;
     position: absolute;
     top: 1px;
-    left: 1px;
+    left: 0;
     width: 30px;
     height: 30px;
     background: #FFFFFF26;
@@ -32,7 +34,7 @@
     display: none;
     position: absolute;
     top: 1px;
-    left: 1px;
+    left: 0;
     width: 30px;
     height: 30px;
     background: #87F29A;
