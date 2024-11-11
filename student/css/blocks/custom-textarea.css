@@ -33,7 +33,7 @@
     cursor: pointer;
 }
 
-.custom-textarea__logo {
+.custom-textarea__icon {
     position: absolute;
     top: 19px;
     left: 18px;
@@ -45,6 +45,6 @@
     background: #6FB58226;
 }
 
-.custom-textarea__field:hover+.custom-textarea__label+.custom-textarea__logo, .custom-textarea__field:focus-visible+.custom-textarea__label+.custom-textarea__logo {
+.custom-textarea__field:hover+.custom-textarea__label+.custom-textarea__icon, .custom-textarea__field:focus-visible+.custom-textarea__label+.custom-textarea__icon {
     color: #87F29A;
 }

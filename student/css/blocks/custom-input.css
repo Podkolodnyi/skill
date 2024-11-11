@@ -32,7 +32,7 @@
     cursor: pointer;
 }
 
-.custom-input__logo {
+.custom-input__icon {
     position: absolute;
     top: 19px;
     left: 16px;
@@ -43,7 +43,7 @@
     cursor: pointer;
 }
 
-.custom-input__logo--phone {
+.custom-input__icon--phone {
     left: 19px;
 }
 
@@ -51,6 +51,14 @@
     background: #6FB58226;
 }
 
-.custom-input__field:hover+.custom-input__label+.custom-input__logo, .custom-input__field:focus-visible+.custom-input__label+.custom-input__logo {
+.custom-input__field:hover+.custom-input__label+.custom-input__icon, .custom-input__field:focus-visible+.custom-input__label+.custom-input__icon {
     color: #87F29A;
+}
+
+.custom-input--error .custom-input__label, .custom-input--error .custom-input__label {
+    background: #FF757526;
+}
+
+.custom-input--error .custom-input__icon, .custom-input--error .custom-input__icon {
+    color: #FF7575;
 }

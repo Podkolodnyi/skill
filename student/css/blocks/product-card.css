@@ -1,4 +1,4 @@
-.card {
+.product-card {
     padding: 0 29px 28px;
     background: #FFFFFF;
     border: 3px solid #0000001A;
@@ -9,12 +9,12 @@
     cursor: pointer;
 }
 
-.card__img {
+.product-card__img {
     height: 248px;
     width: 382px;
 }
 
-.card__title {
+.product-card__title {
     font-family: "Press Start 2P", "Arial", sans-serif;
     font-size: 22px;
     font-weight: 400;
@@ -22,26 +22,26 @@
     margin: 0 0 12px;
 }
 
-.card--violet .card__title-color {
+.product-card--violet .product-card__title-color {
     color: #AFA3FF;
 }
 
-.card--green .card__title-color {
+.product-card--green .product-card__title-color {
     color: #87F29A;
 }
 
-.card--yellow .card__title-color {
+.product-card--yellow .product-card__title-color {
     color: #FE8900;
 }
 
-.card__text {
+.product-card__text {
     font-size: 16px;
     line-height: 22px;
     color: #00000099;
     margin: 0 0 22px;
 }
 
-.card__advantages-list {
+.product-card__advantages-list {
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -51,7 +51,7 @@
     flex-grow: 1;
 }
 
-.card__advantages-item {
+.product-card__advantages-item {
     font-size: 14px;
     line-height: 20px;
     display: flex;
@@ -59,7 +59,7 @@
     gap: 8px;
 }
 
-.card__advantages-item-color {
+.product-card__advantages-item-color {
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
@@ -67,53 +67,53 @@
     padding: 2px 8px;
 }
 
-.card--violet .card__advantages-item-color{
+.product-card--violet .product-card__advantages-item-color{
     background: #AFA3FF;
     color: black;
 }
 
-.card--green .card__advantages-item-color {
+.product-card--green .product-card__advantages-item-color {
     background: #87F29A;
     color: black;
 }
 
-.card--yellow .card__advantages-item-color {
+.product-card--yellow .product-card__advantages-item-color {
     background: #FFC61F;
     color: black;
 }
 
-.card--active {
+.product-card--active {
     background: #121C25;
     color: #FFFFFF;
 }
 
-.card--active .card__text {
+.product-card--active .product-card__text {
     color: #FFFFFF99;
 }
 
-.card--active .card__button--violet {
+.product-card--active .product-card__button--violet {
     background: #AFA3FF;
     color: black;
 }
 
-.card--active .card__button--green {
+.product-card--active .product-card__button--green {
     background: #87F29A;
     color: black;
 }
 
-.card--active .card__button--yellow {
+.product-card--active .product-card__button--yellow {
     background: #FFC61F;
     color: black;
 }
 
-.card--active .card__button--violet:hover, .card--active .card__button--violet:focus-visible {
+.product-card--active .product-card__button--violet:hover, .product-card--active .product-card__button--violet:focus-visible {
     background: #998CF1;
 }
 
-.card--active .card__button--green:hover, .card--active .card__button--green:focus-visible {
+.product-card--active .product-card__button--green:hover, .product-card--active .product-card__button--green:focus-visible {
     background: #78DF8A;
 }
 
-.card--active .card__button--yellow:hover, .card--active .card__button--yellow:focus-visible {
+.product-card--active .product-card__button--yellow:hover, .product-card--active .product-card__button--yellow:focus-visible {
     background: #F2B913;
 }
