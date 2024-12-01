@@ -1,0 +1,86 @@
+.advice-card {
+  position: relative;
+  min-height: 480px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 20px 20px 32px;
+  overflow: hidden;
+
+  @include vp-1023 {
+    min-height: 380px;
+    max-width: 226px;
+    padding: 20px 20px 28px;
+  }
+
+  @include vp-767 {
+    min-height: 320px;
+    max-width: 165px;
+    padding: 15px 15px 20px;
+  }
+
+  &__background {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 20px 0;
+
+    @include vp-767 {
+      gap: 5px;
+    }
+  }
+
+  &__label {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 700;
+    color: $color-white;
+
+    @include vp-1023 {
+      font-size: 12px;
+    }
+
+    @include vp-767 {
+      font-size: 10px;
+      line-height: 14px;
+    }
+  }
+
+  &__title {
+    margin: auto 0 20px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: $color-white;
+
+    @include vp-1023 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 18px;
+      margin: auto 0 15px;
+    }
+  }
+
+  &__btn {
+    padding: 14px;
+
+    @include vp-1023 {
+      padding: 10px;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
