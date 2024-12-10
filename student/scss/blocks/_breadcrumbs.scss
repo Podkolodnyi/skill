@@ -14,6 +14,10 @@
   &--alternate {
     .breadcrumbs__list {
       justify-content: flex-start;
+
+      @include vp-1023 {
+        justify-content: center;
+      }
     }
   }
 
@@ -39,8 +43,16 @@
       line-height: 16px;
     }
 
+    &--disabled {
+      color: #1E222E;
+    }
+
     &:not(.breadcrumbs__link--active) {
       color: $color-manatee-1;
+
+      &:hover, &:focus-visible {
+        color: #476BF0;
+      }
 
       &::after {
         content: "";

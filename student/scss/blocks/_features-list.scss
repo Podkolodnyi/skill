@@ -13,5 +13,10 @@
 
   &--alternate {
     grid-template-columns: repeat(4, 1fr);
+
+    @include vp-1023 {
+      grid-template-columns: repeat(2, auto);
+      justify-content: center;
+    }
   }
 }

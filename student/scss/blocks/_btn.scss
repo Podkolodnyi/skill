@@ -14,5 +14,18 @@
   &--invert {
     color: $color-royal-blue;
     background-color: $color-white;
+
+    &:hover, &:focus-visible{
+      background: #EAECF4;
+    }
+  }
+
+ &:hover, &:focus-visible {
+   background-color: #3356D7;
+ }
+
+  &--disabled {
+    background: #F0F0F0;
+    color: #9A9BA0;
   }
 }
