@@ -1,6 +1,7 @@
 .breadcrumbs {
   padding: 20px 0 0;
   margin: 0 0 32px 0;
+  cursor: default;
 
   @include vp-1023 {
     margin: 0 0 30px 0;
@@ -43,15 +44,11 @@
       line-height: 16px;
     }
 
-    &--disabled {
-      color: #1E222E;
-    }
-
     &:not(.breadcrumbs__link--active) {
       color: $color-manatee-1;
 
       &:hover, &:focus-visible {
-        color: #476BF0;
+        color: $color-royal-blue;
       }
 
       &::after {
@@ -66,5 +63,11 @@
         right: -11px;
       }
     }
+
+    &--disabled {
+      color: $color-black-russian !important;
+      pointer-events: none;
+    }
+
   }
 }

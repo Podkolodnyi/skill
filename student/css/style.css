@@ -404,7 +404,8 @@ a {
 
 .breadcrumbs {
   padding: 20px 0 0;
-  margin: 0 0 32px 0; }
+  margin: 0 0 32px 0;
+  cursor: default; }
   @media (max-width: 1023px) {
     .breadcrumbs {
       margin: 0 0 30px 0; } }
@@ -443,8 +444,6 @@ a {
       .breadcrumbs__link {
         font-size: 12px;
         line-height: 16px; } }
-    .breadcrumbs__link--disabled {
-      color: #1E222E; }
     .breadcrumbs__link:not(.breadcrumbs__link--active) {
       color: #8E9096; }
       .breadcrumbs__link:not(.breadcrumbs__link--active):hover, .breadcrumbs__link:not(.breadcrumbs__link--active):focus-visible {
@@ -460,6 +459,9 @@ a {
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
         right: -11px; }
+    .breadcrumbs__link--disabled {
+      color: #1E222E !important;
+      pointer-events: none; }
 
 .btn {
   outline: none;
@@ -473,16 +475,17 @@ a {
   font-weight: 500;
   text-decoration: none;
   background-color: #476BF0; }
+  .btn:hover, .btn:focus-visible {
+    background-color: #3356D7; }
   .btn--invert {
     color: #476BF0;
     background-color: #FFFFFF; }
     .btn--invert:hover, .btn--invert:focus-visible {
-      background: #EAECF4; }
-  .btn:hover, .btn:focus-visible {
-    background-color: #3356D7; }
+      background-color: #EAECF4; }
   .btn--disabled {
-    background: #F0F0F0;
-    color: #9A9BA0; }
+    background-color: #F0F0F0;
+    color: #9A9BA0;
+    pointer-events: none; }
 
 .advices__title {
   margin: 0 0 60px;
