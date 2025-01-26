@@ -1,31 +1,21 @@
 .socials {
   display: flex;
   gap: 8px;
-  list-style: none;
-  margin: 0;
   padding: 0;
-
-  @include vp-1023 {
-    justify-content: center;
-  }
+  list-style: none;
 
   &__link {
-    outline: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background-color: $color-solitude-4;
+    background-color: $color-solitude-2;
 
-    @include vp-1023 {
-      width: 40px;
-      height: 40px;
-    }
-
-    &:hover, &:focus-visible {
-      background-color: $color-quartz;
+    &:focus-visible,
+    &:hover {
+      background-color: $color-link-water;
     }
   }
 }
