@@ -11,6 +11,10 @@
     border-radius: 10px;
     outline: none;
 
+    &:hover, &:focus-within {
+      border-color: $color-royal-blue-1;
+    }
+
     @include vp-768 {
       padding: 29px 19px 9px 19px;
     }

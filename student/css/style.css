@@ -787,6 +787,8 @@ a {
     padding: 19px 32px;
     color: #FFFFFF;
     background-color: #476BF0; }
+    .btn--secondary:hover, .btn--secondary:focus {
+      background-color: #3356D7; }
   .btn--tertiary {
     color: #FFFFFF;
     padding: 15px 24px;
@@ -853,6 +855,8 @@ a {
     border: 1px solid #CCCFDE;
     border-radius: 10px;
     outline: none; }
+    .custom-input__field:hover, .custom-input__field:focus-within {
+      border-color: #476BF0; }
     @media (min-width: 768px) {
       .custom-input__field {
         padding: 29px 19px 9px 19px; } }
@@ -883,6 +887,8 @@ a {
   @media (min-width: 1024px) {
     .custom-checkbox {
       width: unset; } }
+  .custom-checkbox__input:hover + .custom-checkbox__label .custom-checkbox__field, .custom-checkbox__input:focus-visible + .custom-checkbox__label .custom-checkbox__field {
+    border-color: #476BF0; }
   .custom-checkbox__input:checked + .custom-checkbox__label .custom-checkbox__field {
     background-color: #476BF0;
     border-color: #476BF0; }
@@ -924,6 +930,9 @@ a {
     line-height: 18px; }
   .custom-checkbox__link {
     color: #476BF0; }
+    .custom-checkbox__link:hover, .custom-checkbox__link:focus {
+      color: #3356D7;
+      outline: 0; }
 
 .form__wrapper {
   margin: 0 0 24px 0;
@@ -1099,18 +1108,13 @@ a {
     color: #A3A7BC; }
 
 .intro {
-  padding: 0 0 60px 0;
-  overflow: hidden; }
+  overflow: hidden;
+  margin: 0 0 24px; }
   @media (min-width: 1024px) {
     .intro {
-      padding: 0;
-      margin: 0 0 100px 0; } }
-  @media (min-width: 1304px) {
-    .intro {
-      margin: 0 0 120px 0; } }
+      padding: 0; } }
   .intro__banner-wrapper {
-    background-color: #DDF1FF;
-    margin: 0 0 24px 0; }
+    background-color: #DDF1FF; }
     @media (min-width: 1304px) {
       .intro__banner-wrapper {
         padding: 20px 0; } }
@@ -1201,8 +1205,6 @@ a {
         margin: 0 -52px 0 0; } }
   .intro__image {
     margin: 0 auto;
-    height: 220px;
-    width: 100%;
     -o-object-fit: contain;
        object-fit: contain; }
     @media (min-width: 1304px) {
@@ -1491,6 +1493,8 @@ a {
     border: none;
     border-radius: 8px;
     cursor: pointer; }
+    .connect__tabs-control:hover {
+      background-color: #F4F6FA; }
     @media (min-width: 360px) {
       .connect__tabs-control {
         padding: 11px 25px; } }
@@ -1600,6 +1604,9 @@ a {
         text-align: center; } }
   .connect__link {
     color: #476BF0; }
+    .connect__link:hover, .connect__link:focus {
+      color: #3356D7;
+      outline: 0; }
 
 .benefit {
   margin: 0 0 60px 0; }
@@ -1794,8 +1801,12 @@ a {
   .faq__element {
     background-color: #F4F6FA;
     border-radius: 12px; }
+    .faq__element .faq__button:hover {
+      color: #696E82; }
     .faq__element.is-active .faq__content {
       display: block; }
+    .faq__element.is-active .faq__button:hover {
+      color: #1E222E; }
     .faq__element.is-active .faq__button-icon::after {
       opacity: 0; }
   .faq__button {
@@ -1879,5 +1890,68 @@ a {
     @media (min-width: 1304px) {
       .faq__text {
         max-width: calc(100% - 34px); } }
+
+.discounts__list {
+  list-style-type: none;
+  margin: 0 auto 60px;
+  padding: 20px;
+  border-radius: 16px;
+  -webkit-box-shadow: 0 4px 20px 0 #141A2B29;
+          box-shadow: 0 4px 20px 0 #141A2B29; }
+  @media (min-width: 1024px) {
+    .discounts__list {
+      margin: 0 auto 100px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 25px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: 0;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      border-radius: 0; } }
+  @media (min-width: 1304px) {
+    .discounts__list {
+      margin: 0 auto 120px;
+      gap: 24px; } }
+.discounts__item:not(:last-child) {
+  margin: 0 0 16px; }
+  @media (min-width: 1024px) {
+    .discounts__item:not(:last-child) {
+      margin: 0; } }
+@media (min-width: 1024px) {
+  .discounts__item {
+    max-width: 298px;
+    padding: 32px 20px;
+    background-color: #F4F6FA;
+    border-radius: 16px;
+    text-align: center; } }
+@media (min-width: 1304px) {
+  .discounts__item {
+    min-width: 392px; } }
+.discounts__item-title {
+  margin: 0 0 4px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px; }
+  @media (min-width: 1024px) {
+    .discounts__item-title {
+      font-size: 24px;
+      line-height: 28px; } }
+.discounts__item-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #6A6E80; }
+  @media (min-width: 768px) {
+    .discounts__item-text {
+      font-size: 16px;
+      line-height: 22px; } }
+
+.advantages {
+  margin: 0 0 60px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -90,9 +90,17 @@
     background-color: $color-solitude-1;
     border-radius: 12px;
 
+    .faq__button:hover {
+      color: $color-storm-grey-3;
+    }
+
     &.is-active {
       .faq__content {
         display: block;
+      }
+
+      .faq__button:hover {
+        color: $color-black-russian;
       }
 
       .faq__button-icon {
@@ -117,6 +125,10 @@
     background-color: transparent;
     border: 0;
     cursor: pointer;
+
+    &:hover {
+
+    }
 
     @include vp-768 {
       padding: 19px 0;

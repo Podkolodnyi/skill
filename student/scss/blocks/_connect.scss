@@ -108,6 +108,9 @@
     border-radius: 8px;
     cursor: pointer;
 
+    &:hover, {
+      background-color: $color-solitude-1;
+    }
 
     @include vp-360 {
       padding: 11px 25px;
@@ -225,5 +228,10 @@
 
   &__link {
     color: $color-royal-blue-1;
+
+    &:hover, &:focus {
+      color: $color-free-speech-blue;
+      outline: 0;
+    }
   }
 }

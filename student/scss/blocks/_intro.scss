@@ -1,19 +1,13 @@
 .intro {
-  padding: 0 0 60px 0;
   overflow: hidden;
+  margin: 0 0 24px;
 
   @include vp-1024 {
     padding: 0;
-    margin: 0 0 100px 0;
-  }
-
-  @include vp-1304 {
-    margin: 0 0 120px 0;
   }
 
   &__banner-wrapper {
     background-color: $color-alice-blue;
-    margin: 0 0 24px 0;
 
     @include vp-1304 {
       padding: 20px 0;
@@ -116,8 +110,6 @@
 
   &__image {
     margin: 0 auto;
-    height: 220px;
-    width: 100%;
     object-fit: contain;
 
     @include vp-1304 {
