@@ -1,0 +1,59 @@
+.advantages-card {
+  padding: 20px;
+  min-height: 200px;
+  background-color: $color-solitude-1;
+  border-radius: 12px;
+
+  @include vp-768 {
+    min-height: 100%;
+  }
+
+  @include vp-1024 {
+    background-color: $color-white;
+    text-align: center;
+  }
+
+  &__icon {
+    margin: 0 0 12px;
+
+    @include vp-1024 {
+      width: 64px;
+      height: 64px;
+      color: $color-white;
+      background-color: $color-royal-blue-1;
+      border: solid 16px $color-royal-blue-1;
+      border-radius: 12px;
+      margin: 0 0 20px;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 12px;
+
+    @include vp-1024 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-storm-grey-3;
+
+    @include vp-1024 {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  &__link {
+    cursor: pointer;
+    color: $color-royal-blue-1;
+  }
+}

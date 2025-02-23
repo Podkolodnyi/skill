@@ -20,7 +20,6 @@
 
   &__heading {
     margin: 0 0 13px 0;
-    position: sticky;
     top: 85px;
 
     @include vp-768 {
@@ -29,6 +28,7 @@
 
     @include vp-1024 {
       margin: 0;
+      position: sticky;
       width: 380px;
       flex-shrink: 0;
     }
