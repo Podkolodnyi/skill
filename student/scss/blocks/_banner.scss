@@ -1,0 +1,9 @@
+.banner {
+    @include vp-768 {
+        padding-top: 16px;
+    };
+
+    @include vp-1024 {
+        padding-top: 21px;
+    };
+}
