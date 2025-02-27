@@ -6,15 +6,21 @@
 
   @include vp-768 {
     min-height: 100%;
+    padding: 24px;
   }
 
   @include vp-1024 {
+    padding: 0 5px;
     background-color: $color-white;
     text-align: center;
   }
 
   &__icon {
     margin: 0 0 12px;
+
+    @include vp-768 {
+      margin: 0 0 10px;
+    }
 
     @include vp-1024 {
       width: 64px;

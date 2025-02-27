@@ -87,8 +87,11 @@
   }
 
   &__element {
-    background-color: $color-solitude-1;
-    border-radius: 12px;
+
+    @include vp-1024 {
+      background-color: $color-solitude-1;
+      border-radius: 12px;
+    }
 
     .faq__button:hover {
       color: $color-storm-grey-3;
@@ -99,6 +102,17 @@
         display: block;
       }
 
+      .faq__button {
+
+        @include vp-768 {
+          padding: 20px 0 16px;
+        }
+
+        @include vp-1024 {
+          padding: 18px 24px 20px;
+        }
+      }
+
       .faq__button:hover {
         color: $color-black-russian;
       }
@@ -107,6 +121,18 @@
         &::after {
           opacity: 0;
         }
+      }
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      height: 0;
+      width: 100%;
+      border: 1px solid $color-solitude-3;
+
+      @include vp-1024 {
+        display: none;
       }
     }
   }
@@ -126,10 +152,6 @@
     border: 0;
     cursor: pointer;
 
-    &:hover {
-
-    }
-
     @include vp-768 {
       padding: 19px 0;
     }
@@ -148,6 +170,9 @@
     }
 
     @include vp-1024 {
+      font-family: Noto Sans;
+      font-size: 18px;
+      line-height: 24px;
       max-width: 450px;
     }
 
@@ -198,7 +223,7 @@
     line-height: 18px;
 
     @include vp-768 {
-      padding: 0 0 16px 0;
+      padding: 0 0 18px 0;
     }
 
     @include vp-1024 {

@@ -62,6 +62,16 @@
     }
   }
 
+  &__title-percent {
+    @include vp-1024 {
+      display: block;
+    }
+
+    @include vp-1304 {
+      display: inline-block;
+    }
+  }
+
   &__text {
     margin: 0;
     flex-grow: 1;

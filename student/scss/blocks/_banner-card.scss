@@ -8,6 +8,14 @@
     justify-content: space-between;
     margin: 0 0 60px;
 
+    @include vp-1024 {
+        margin: 0 0 100px;
+    }
+
+    @include vp-1304 {
+        margin: 0 0 120px;
+    }
+
     &__content {
         padding: 16px 0 16px 20px;
 
@@ -17,6 +25,10 @@
 
         @include vp-1024 {
             padding: 48px 0 48px 100px;
+        }
+
+        @include vp-1304 {
+            padding: 48px 0 48px 120px;
         }
     }
 
@@ -55,7 +67,7 @@
             top: -21px;
         }
 
-        @include vp-1536 {
+        @include vp-1304 {
             right: 184px;
         }
     }

@@ -29,6 +29,7 @@
     font-size: 26px;
     line-height: 32px;
     margin: 0 0 16px;
+    letter-spacing: 0,02em;
 
     @include vp-768 {
       font-size: 28px;
@@ -62,6 +63,10 @@
       line-height: 24px;
       text-align: center;
       margin: 0 auto 60px;
+    }
+
+    @include vp-1304 {
+      margin: 0 auto 80px;
     }
   }
 
@@ -100,6 +105,7 @@
     }
 
     @include vp-1024 {
+      min-height: auto;
       max-width: 298px;
     }
 

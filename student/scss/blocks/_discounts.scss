@@ -2,9 +2,13 @@
   &__list {
     list-style-type: none;
     margin: 0 auto 60px;
-    padding: 20px;
+    padding: 20px 21px;
     border-radius: 16px;
     box-shadow: 0 4px 20px 0 #141A2B29;
+
+    @include vp-768 {
+      padding: 24px;
+    }
 
     @include vp-1024 {
       margin: 0 auto 100px;
@@ -24,6 +28,10 @@
 
   &__item:not(:last-child) {
     margin: 0 0 16px;
+
+    @include vp-768 {
+      margin: 0 0 24px;
+    }
 
     @include vp-1024 {
       margin: 0;
@@ -51,6 +59,7 @@
     line-height: 24px;
 
     @include vp-1024 {
+      margin: 0 0 8px;
       font-size: 24px;
       line-height: 28px;
     }
