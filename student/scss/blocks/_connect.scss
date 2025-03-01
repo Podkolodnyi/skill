@@ -142,6 +142,7 @@
     @include vp-1304 {
       gap: 32px;
       display: flex;
+      flex-wrap: wrap;
     }
   }
 
