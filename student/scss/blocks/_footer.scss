@@ -1,6 +1,6 @@
 .footer {
   padding: 40px 0;
-  background-color: $color-solitude-1;
+  background-color: $color-solitude-2;
 
   @include vp-1024 {
     padding: 80px 0;
@@ -237,7 +237,7 @@
 
   &__policy {
     row-gap: 8px;
-    margin: 0 0 32px 0;
+    margin: 0 0 24px 0;
 
     @include vp-768 {
       row-gap: 10px;

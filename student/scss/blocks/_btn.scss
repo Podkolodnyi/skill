@@ -10,7 +10,7 @@
   line-height: 18px;
   text-align: center;
   color: $color-black-russian;
-  background-color: $color-solitude-2;
+  background-color: $color-solitude-3;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -19,12 +19,18 @@
     cursor: default;
   }
 
+  &:focus-visible,
+  &:hover {
+    background-color: $color-link-water;
+  }
+
   &--secondary {
     padding: 19px 32px;
     color: $color-white;
     background-color: $color-royal-blue-1;
 
-    &:hover, &:focus {
+    &:focus-visible,
+    &:hover {
       background-color: $color-free-speech-blue;
     }
   }
@@ -33,5 +39,62 @@
     color: $color-white;
     padding: 15px 24px;
     background-color: $color-black-russian;
+
+    &:focus-visible,
+    &:hover {
+      background-color: $color-blue-zodiac;
+    }
   }
+
+  &--quaternary {
+    padding: 12px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    background-color: $color-lavander;
+
+    @include vp-768 {
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+
+  &__reset {
+    height: 24px;
+    width: 24px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+&__search {
+    height: 24px;
+    width: 24px;
+    padding: 3px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+&__pages-selector {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+
+  &::before {
+    content: counter(number);
+  }
+}
+
+&__arrow {
+  border: none;
+  background-color: $color-white-smoke;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
 }

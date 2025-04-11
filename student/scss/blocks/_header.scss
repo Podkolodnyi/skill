@@ -13,7 +13,7 @@
 
   @include vp-1024 {
     padding: 16px 0;
-    background-color: $color-solitude-1;
+    background-color: $color-solitude-2;
   }
 
   &__wrapper {
@@ -82,7 +82,8 @@
     cursor: pointer;
 
     &:hover,
-    &:focus-visible {
+    &:focus-visible,
+    &:active {
       color: $color-royal-blue-1;
     }
 
@@ -98,7 +99,8 @@
       }
 
       &:hover,
-      &:focus-visible {
+      &:focus-visible,
+      &:active {
         color: $color-black-russian;
       }
 

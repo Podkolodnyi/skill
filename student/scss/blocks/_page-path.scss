@@ -1,0 +1,27 @@
+.page-path {
+    font-size: 13px;
+    line-height: 16px;
+    margin: 0 0 40px;
+
+    &__box {
+        display: flex;
+        align-items: center;
+        gap: 19px;
+    }
+
+    &__home {
+        color: $color-storm-grey-1;
+        position: relative;
+    }
+
+    &__home::after {
+        content: "";
+        display: block;
+        border: solid $color-storm-grey-1 2px;
+        border-radius: 100%;
+        position: absolute;
+        top: 50%;
+        right: -12px;
+        transform: translateY(-50%);
+    }
+}
