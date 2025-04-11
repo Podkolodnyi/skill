@@ -66,35 +66,47 @@
     cursor: pointer;
     border: none;
     background: none;
-}
+  }
 
-&__search {
+  &__search {
     height: 24px;
     width: 24px;
     padding: 3px;
     cursor: pointer;
     border: none;
     background: none;
-}
-
-&__pages-selector {
-  background: none;
-  border: none;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-
-  &::before {
-    content: counter(number);
   }
-}
 
-&__arrow {
-  border: none;
-  background-color: $color-white-smoke;
-  border-radius: 8px;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-}
+  &__pages-selector {
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+
+    &::before {
+      content: counter(number);
+      font-family: "Noto Sans", "Arial", sans-serif;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+    }
+
+    &--active {
+      background: $color-black-russian;
+      color: $color-white;
+    }
+  }
+
+  &__arrow {
+    padding: 0;
+    border: none;
+    background-color: $color-white-smoke;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+  }
 }

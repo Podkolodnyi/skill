@@ -1,4 +1,6 @@
 .pages-selector {
+    margin: 0 0 40px;
+
     &__list {
         list-style-type: none;
         margin: 0;
@@ -11,6 +13,7 @@
 
     &__list-item {
         counter-increment: number 1;
+
         &:first-child {
             grid-row: span 2;
         }

@@ -50,4 +50,19 @@
             line-height: 18px;
         }
     }
+
+    &__copyright {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin: 0 0 60px;
+
+        &-text {
+            margin: 0;
+            font-size: 13px;
+            line-height: 16px;
+        }
+    }
 }
