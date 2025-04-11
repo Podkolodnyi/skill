@@ -12,6 +12,7 @@
   background-color: transparent;
   cursor: pointer;
 
+<<<<<<< Updated upstream
   &__reset,
   &__search {
     color: $color-mischka;
@@ -19,9 +20,18 @@
   &:hover,
   &:focus-visible {
     color: $color-royal-blue-1;
+=======
+  &__icon {
+    width: 24px;
+    height: 24px;
+>>>>>>> Stashed changes
   }
 
   &--light {
     color: $color-mischka;
   }
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes

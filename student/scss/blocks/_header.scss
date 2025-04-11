@@ -13,7 +13,11 @@
 
   @include vp-1024 {
     padding: 16px 0;
+<<<<<<< Updated upstream
     background-color: $color-solitude-2;
+=======
+    background-color: $color-solitude-1;
+>>>>>>> Stashed changes
   }
 
   &__wrapper {
@@ -82,8 +86,12 @@
     cursor: pointer;
 
     &:hover,
+<<<<<<< Updated upstream
     &:focus-visible,
     &:active {
+=======
+    &:focus-visible {
+>>>>>>> Stashed changes
       color: $color-royal-blue-1;
     }
 
@@ -99,8 +107,12 @@
       }
 
       &:hover,
+<<<<<<< Updated upstream
       &:focus-visible,
       &:active {
+=======
+      &:focus-visible {
+>>>>>>> Stashed changes
         color: $color-black-russian;
       }
 
