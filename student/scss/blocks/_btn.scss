@@ -10,11 +10,8 @@
   line-height: 18px;
   text-align: center;
   color: $color-black-russian;
-<<<<<<< Updated upstream
   background-color: $color-solitude-3;
-=======
   background-color: $color-solitude-2;
->>>>>>> Stashed changes
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -23,33 +20,26 @@
     cursor: default;
   }
 
-<<<<<<< Updated upstream
   &:focus-visible,
   &:hover {
     background-color: $color-link-water;
   }
 
-=======
->>>>>>> Stashed changes
   &--secondary {
     padding: 19px 32px;
     color: $color-white;
     background-color: $color-royal-blue-1;
-<<<<<<< Updated upstream
 
     &:focus-visible,
     &:hover {
       background-color: $color-free-speech-blue;
     }
-=======
->>>>>>> Stashed changes
   }
 
   &--tertiary {
     color: $color-white;
     padding: 15px 24px;
     background-color: $color-black-russian;
-<<<<<<< Updated upstream
 
     &:focus-visible,
     &:hover {
@@ -109,7 +99,3 @@
   height: 40px;
 }
 }
-=======
-  }
-}
->>>>>>> Stashed changes
