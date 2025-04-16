@@ -918,6 +918,14 @@ a {
   width: 40px;
   height: 40px;
 }
+.btn__advice {
+  border-radius: 8px;
+  border: none;
+  padding: 12px;
+  background-color: #EDEDEE;
+  font-size: 12px;
+  line-height: 14px;
+}
 
 .btn-icon {
   padding: 0;
@@ -1044,6 +1052,34 @@ a {
   margin: 0;
   font-size: 13px;
   line-height: 16px;
+}
+
+.search-results--empty .search-results__input {
+  margin: 0 0 20px;
+}
+.search-results--empty .search-results__advice {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 60px;
+}
+.search-results--empty .search-results__empty {
+  text-align: center;
+}
+.search-results--empty .search-results__empty-img {
+  margin: 0 auto 20px;
+}
+.search-results--empty .search-results__empty-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 0 12px;
+}
+.search-results--empty .search-results__empty-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
 }
 
 .custom-input {
