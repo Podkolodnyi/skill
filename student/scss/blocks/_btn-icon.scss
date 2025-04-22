@@ -16,6 +16,14 @@
   &__search {
     color: $color-mischka;
   }
+
+  &__close {
+    @include vp-768 {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
   &:hover,
   &:focus-visible {
     color: $color-royal-blue-1;
