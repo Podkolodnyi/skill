@@ -57,14 +57,41 @@
     </div>
   </header>
   <main>
-    <section class="search-results ">
+    <section class="search-results search-results--active">
+      <div class="search-results__active">
+        <div class="container">
+          <div class="search-results__input">
+            <div class="custom-input">
+              <input class="custom-input__field" type="text" id="search-input" name="search-input">
+              <div class="custom-input__button-box">
+                <button class="btn__reset">
+                  <svg class="btn-icon__reset" width="14" height="14" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-reset"></use>
+                  </svg>
+                </button>
+                <button class="btn__search">
+                  <svg class="btn-icon__search" width="18" height="18" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="search-results__advice">
+              <button class="btn__advice">Что входит в Привилегии?</button>
+              <button class="btn__advice">Курсы валют</button>
+              <button class="btn__advice">Где скачать приложение?</button>
+              <button class="btn__advice">Рефинансирование</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="container">
         <div class="page-path">
           <div class="page-path__box">
             <a class="page-path__home" href="#">Главная</a>
             <a class="page-path__current-page" href="#">Результаты поиска</a>
           </div>
-      </div>
+        </div>
         <h1 class="search-results__title">Результаты поиска</h1>
         <div class="search-results__input">
           <div class="custom-input">
@@ -81,12 +108,6 @@
                 </svg>
               </button>
             </div>
-          </div>
-          <div class="search-results__advice">
-            <button class="btn__advice">Что входит в Привилегии?</button>
-            <button class="btn__advice">Курсы валют</button>
-            <button class="btn__advice">Где скачать приложение?</button>
-            <button class="btn__advice">Рефинансирование</button>
           </div>
         </div>
         <ul class="search-results__list">
