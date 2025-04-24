@@ -10,6 +10,18 @@
         font-weight: 700;
         font-size: 28px;
         line-height: 32px;
+
+        @include vp-768 {
+            margin: 0 0 64px;
+            font-size: 32px;
+            line-height: 36px;
+        }
+
+        @include vp-1024 {
+            margin: 0 0 120px;
+            font-size: 40px;
+            line-height: 44px;
+        }
     }
 
     &__title::after {
@@ -21,10 +33,23 @@
         top: 116px;
         transform: translateY(-50%);
         left: 0;
+
+        @include vp-768 {
+            top: 124px;
+        }
+
+        @include vp-1024 {
+            top: 162px;
+        }
     }
 
     &__input {
         margin: 0 0 60px;
+
+        @include vp-1024 {
+            max-width: 806px;
+            margin: 0 auto 60px;
+        }
     }
 
     &__advice {
@@ -44,6 +69,11 @@
 
         @include vp-768 {
             margin: 0 0 40px;
+        }
+
+        @include vp-1024 {
+            max-width: 806px;
+            margin: 0 auto 60px;
         }
     }
 
@@ -82,6 +112,10 @@
 
         @include vp-768 {
             margin: 0 0 80px;
+        }
+
+        @include vp-1024 {
+            margin: 0 0 100px;
         }
     }
 }
@@ -225,7 +259,8 @@
     .custom-input {
         border-color: #1E222E80;
     }
-    .search-results__active{
+
+    .search-results__active {
         display: block;
         position: absolute;
         top: 0;

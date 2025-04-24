@@ -402,6 +402,16 @@ a {
   margin: 0 auto;
   padding: 0 15px;
 }
+@media (min-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+}
 
 .visually-hidden {
   position: absolute;
@@ -1006,6 +1016,13 @@ a {
   line-height: 16px;
   margin: 0 0 40px;
 }
+@media (min-width: 1024px) {
+  .page-path {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 20px 0 0;
+  }
+}
 .page-path__box {
   display: flex;
   align-items: center;
@@ -1038,6 +1055,20 @@ a {
   font-size: 28px;
   line-height: 32px;
 }
+@media (min-width: 768px) {
+  .search-results__title {
+    margin: 0 0 64px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+@media (min-width: 1024px) {
+  .search-results__title {
+    margin: 0 0 120px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
 .search-results__title::after {
   content: "";
   position: absolute;
@@ -1048,8 +1079,24 @@ a {
   transform: translateY(-50%);
   left: 0;
 }
+@media (min-width: 768px) {
+  .search-results__title::after {
+    top: 124px;
+  }
+}
+@media (min-width: 1024px) {
+  .search-results__title::after {
+    top: 162px;
+  }
+}
 .search-results__input {
   margin: 0 0 60px;
+}
+@media (min-width: 1024px) {
+  .search-results__input {
+    max-width: 806px;
+    margin: 0 auto 60px;
+  }
 }
 .search-results__advice {
   display: none;
@@ -1068,6 +1115,12 @@ a {
 @media (min-width: 768px) {
   .search-results__list {
     margin: 0 0 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .search-results__list {
+    max-width: 806px;
+    margin: 0 auto 60px;
   }
 }
 .search-results__list-item-title {
@@ -1101,6 +1154,11 @@ a {
 @media (min-width: 768px) {
   .search-results__copyright {
     margin: 0 0 80px;
+  }
+}
+@media (min-width: 1024px) {
+  .search-results__copyright {
+    margin: 0 0 100px;
   }
 }
 
@@ -1289,6 +1347,12 @@ a {
 
 .pages-selector {
   margin: 0 0 40px;
+}
+@media (min-width: 1024px) {
+  .pages-selector {
+    max-width: 570px;
+    margin: 0 auto 60px;
+  }
 }
 .pages-selector__list {
   list-style-type: none;

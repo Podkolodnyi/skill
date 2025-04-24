@@ -1,6 +1,11 @@
 .pages-selector {
     margin: 0 0 40px;
 
+    @include vp-1024 {
+        max-width: 570px;
+        margin: 0 auto 60px;
+    }
+
     &__list {
         list-style-type: none;
         margin: 0;
