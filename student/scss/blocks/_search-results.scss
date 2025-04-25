@@ -45,8 +45,10 @@
 
     &__input {
         margin: 0 0 60px;
+        display: flex;
 
         @include vp-1024 {
+            gap: 16px;
             max-width: 806px;
             margin: 0 auto 60px;
         }
@@ -121,16 +123,22 @@
 }
 
 .search-results--empty {
+    .search-results__input-box {
+        max-width: 806px;
+        margin: 0 auto;
+    }
+
     .search-results__input {
+        margin: 0 0 20px;
+    }
+
+    .search-results__advice {
+        display: flex;
         margin: 0 0 60px;
 
         @include vp-768 {
             margin: 0 0 80px;
         }
-    }
-
-    .search-results__advice {
-        display: flex;
     }
 
     .search-results__empty {

@@ -144,4 +144,23 @@
       height: 24px;
     }
   }
+
+  &__find {
+    display: none;
+    background-color: $color-royal-blue-1;
+    color: $color-white;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    width: 110px;
+    height: 56px;
+    border: none;
+    border-radius: 8px;
+
+    @include vp-1024 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }

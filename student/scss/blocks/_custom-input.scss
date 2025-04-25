@@ -1,5 +1,4 @@
 .custom-input {
-    min-width: 100%;
     min-height: 52px;
     border: solid $color-periwinkle 1px;
     border-radius: 8px;
@@ -7,6 +6,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include vp-1024 {
+        flex-grow: 1;
+    }
 
     &__field {
         border: none;
