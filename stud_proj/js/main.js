@@ -1,31 +1,18 @@
 import activeMainMenu from "./components/activeMainMenu.js";
 import activeLocation from "./components/activeLocation.js";
-import getProductCard from "./components/ProductCard.js";
-
-async function getCards() {
-    let response = await fetch('./data/data.json');
-    return await response.json();
-}
-
-function renderCards() {
-    getCards().then((cards) => {
-        cards.forEach((el) => {
-            let catalogList = document.querySelector(".catalog__list");
-            let catalogItem = document.createElement("li");
-            catalogItem.classList.add("catalog__item");
-            catalogList.append(catalogItem);
-            let card = new getProductCard(el);
-            catalogItem.append(card);
-        })
-    })
-}
-
+import renderCards from "./components/renderCards.js";
+import getCards from "./components/request.js";
+import getTypeCount from "./components/getTypeCount.js";
 
 window.addEventListener('DOMContentLoaded', () => {
+    //запрос списка карточек
+    let cardsList = getCards();
     //открыть, закрыть каталог
     activeMainMenu();
     //выбрать город
     activeLocation();
-
-    renderCards();
+    //отрисовка карточек
+    renderCards(cardsList);
+    //отобразить количество товаров по категориям
+    getTypeCount(cardsList);
 });
