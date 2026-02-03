@@ -2,7 +2,7 @@ import activeMainMenu from "./components/activeMainMenu.js";
 import activeLocation from "./components/activeLocation.js";
 import renderCards from "./components/renderCards.js";
 import getCards from "./components/request.js";
-import getTypeCount from "./components/getTypeCount.js";
+import filterCards from "./components/filterCards.js";
 
 window.addEventListener('DOMContentLoaded', () => {
     //запрос списка карточек
@@ -14,5 +14,5 @@ window.addEventListener('DOMContentLoaded', () => {
     //отрисовка карточек
     renderCards(cardsList);
     //отобразить количество товаров по категориям
-    getTypeCount(cardsList);
+    filterCards(cardsList);
 });
