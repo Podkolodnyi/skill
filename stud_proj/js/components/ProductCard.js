@@ -1,3 +1,5 @@
+import renderBasketCards from "./renderBasketCards.js";
+
 export default class ProductCard {
     constructor(card) {
         this.id = card.id;
@@ -23,6 +25,9 @@ export default class ProductCard {
         this.productCardMore.classList.add("product-card__more");
         this.productCardVisual.append(this.productCardMore);
         this.productCardLinkIcon = document.createElement("a");
+        this.productCardLinkIcon.addEventListener("click", (e) => {
+            renderBasketCards(card);
+        })
         this.productCardLinkIcon.classList.add("product-card__link", "btn", "btn--icon");
         this.productCardLinkIcon.href = "#";
         this.productCardMore.append(this.productCardLinkIcon);

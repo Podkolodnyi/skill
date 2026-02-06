@@ -1278,6 +1278,8 @@ button {
       height: 60px;
       object-fit: contain;
       width: 60px; }
+  .basket__link {
+    display: none; }
 
 .breadcrumbs {
   margin: 20px 0 60px 0; }
