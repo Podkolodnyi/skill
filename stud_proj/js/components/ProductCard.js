@@ -20,6 +20,8 @@ export default class ProductCard {
         this.productCardImg.classList.add("product-card__img");
         this.productCardImg.src = this.image;
         this.productCardImg.alt = "Изображение товара";
+        this.productCardImg.style.width = "290px";
+        this.productCardImg.style.height = "436px";
         this.productCardVisual.append(this.productCardImg);
         this.productCardMore = document.createElement("div");
         this.productCardMore.classList.add("product-card__more");
@@ -121,7 +123,6 @@ export default class ProductCard {
         this.tooltipOrenburg = this.getTooltipEl("Оренбург", this.availability.orenburg);
         this.tooltipSaintPetersburg = this.getTooltipEl("Санкт-Петербург", this.availability.saintPetersburg);
 
-        return this.productCard;
     }
 
     getTooltipEl(city, count) {
@@ -137,5 +138,9 @@ export default class ProductCard {
         this.tooltipElCount.textContent = count;
         this.tooltipElText.append(this.tooltipElCount);
         return this.tooltipEl;
+    }
+
+    getProductCard() {
+        return this.productCard;
     }
 }

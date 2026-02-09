@@ -4,6 +4,8 @@ import renderCards from "./components/renderCards.js";
 import getCards from "./components/request.js";
 import filterCards from "./components/filterCards.js";
 import activeBasket from "./components/activeBasket.js";
+import activeAccordion from "./components/activeAccordion.js";
+import renderSlider from "./components/slider.js";
 
 window.addEventListener('DOMContentLoaded', () => {
     //запрос списка карточек
@@ -18,4 +20,8 @@ window.addEventListener('DOMContentLoaded', () => {
     filterCards(cardsList);
     //открыть, закрыть корзину
     activeBasket();
+    //открыть, закрыть аккордеон
+    activeAccordion();
+
+    renderSlider(cardsList);
 });

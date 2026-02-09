@@ -6,7 +6,6 @@ export default function basketCount() {
     basketLinkBtn.setAttribute("style", "display: none");
 
     let basketCountNum = basketList.childElementCount;
-    console.log(basketCountNum);
     basketCount.textContent = basketCountNum;
 
     if (basketCountNum > 0) {

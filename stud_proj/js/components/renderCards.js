@@ -1,4 +1,4 @@
-import getProductCard from "./ProductCard.js";
+import ProductCard from "./ProductCard.js";
 
 export default async function renderCards(cardsList) {
     let cards = await cardsList;
@@ -8,7 +8,7 @@ export default async function renderCards(cardsList) {
         let catalogItem = document.createElement("li");
         catalogItem.classList.add("catalog__item");
         catalogList.append(catalogItem);
-        let card = new getProductCard(el);
-        catalogItem.append(card);
+        let card = new ProductCard(el);
+        catalogItem.append(card.getProductCard());
     })
 }
