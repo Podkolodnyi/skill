@@ -1651,20 +1651,22 @@ button {
     background-color: #9BE198;
     border-color: #9BE198; }
 .tooltip__content {
-  position: absolute;
+  /*    position: absolute;*/
   min-width: 208px;
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 10px 60px 0 #4848481A;
   padding: 16px 8px;
-  top: 0;
-  right: 0;
-  transform: translate(9px, calc(-100% - 8px));
-  display: none; }
+  /*    top: 0;
+      right: 0;
+      transform: translate(9px, calc(-100% - 8px));
+  
+      display: none;*/ }
 .tooltip__text {
   font-size: 12px;
   font-weight: 400;
-  line-height: 13.2px; }
+  line-height: 13.2px;
+  color: black; }
 .tooltip__list {
   margin: 8px 0 0;
   padding: 0;

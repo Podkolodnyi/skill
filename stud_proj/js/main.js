@@ -6,6 +6,7 @@ import filterCards from "./components/filterCards.js";
 import activeBasket from "./components/activeBasket.js";
 import activeAccordion from "./components/activeAccordion.js";
 import renderSlider from "./components/slider.js";
+import sendForm from "./components/sendForm.js";
 
 window.addEventListener('DOMContentLoaded', () => {
     //запрос списка карточек
@@ -22,6 +23,8 @@ window.addEventListener('DOMContentLoaded', () => {
     activeBasket();
     //открыть, закрыть аккордеон
     activeAccordion();
-
+    //отрисовка товаров дня
     renderSlider(cardsList);
+    //отправка формы
+    sendForm();
 });

@@ -106,9 +106,27 @@ export default class ProductCard {
 
         this.tooltipBtn.append(this.tooltipIcon);
 
+        this.getTooltipContent();
+        this.getTippy();
+    }
+
+    getTippy() {
+        this.tippyInstance = tippy(this.tooltipBtn, {
+            content: this.tooltipContent,
+            allowHTML: true,
+            placement: 'top',
+            animation: 'shift-away',
+            trigger: 'click',
+            appendTo: () => document.body, // Важно для корректного позиционирования
+            hideOnClick: true,
+            delay: [100, 50],
+            duration: [200, 150],
+        });
+    }
+
+    getTooltipContent() {
         this.tooltipContent = document.createElement("div");
         this.tooltipContent.classList.add("tooltip__content");
-        this.tooltip.append(this.tooltipContent);
         this.tooltipText = document.createElement("span");
         this.tooltipText.classList.add("tooltip__text");
         this.tooltipText.textContent = "Наличие товара по городам:";
@@ -117,27 +135,29 @@ export default class ProductCard {
         this.tooltipList.classList.add("tooltip__list");
         this.tooltipContent.append(this.tooltipList);
 
-
-
         this.tooltipMoscow = this.getTooltipEl("Москва", this.availability.moscow);
         this.tooltipOrenburg = this.getTooltipEl("Оренбург", this.availability.orenburg);
         this.tooltipSaintPetersburg = this.getTooltipEl("Санкт-Петербург", this.availability.saintPetersburg);
-
     }
 
     getTooltipEl(city, count) {
-        this.tooltipEl = document.createElement("li");
-        this.tooltipEl.classList.add("tooltip__item");
-        this.tooltipList.append(this.tooltipEl);
-        this.tooltipElText = document.createElement("li");
-        this.tooltipElText.classList.add("tooltip__text");
-        this.tooltipElText.textContent = `${city}:`;
-        this.tooltipEl.append(this.tooltipElText);
-        this.tooltipElCount = document.createElement("li");
-        this.tooltipElCount.classList.add("tooltip__count");
-        this.tooltipElCount.textContent = count;
-        this.tooltipElText.append(this.tooltipElCount);
-        return this.tooltipEl;
+        const tooltipEl = document.createElement("li");
+        tooltipEl.classList.add("tooltip__item");
+
+        const tooltipElText = document.createElement("span");
+        tooltipElText.classList.add("tooltip__text");
+        tooltipElText.textContent = `${city}: `;
+
+        const tooltipElCount = document.createElement("span");
+        tooltipElCount.classList.add("tooltip__count");
+        tooltipElCount.textContent = count;
+
+        tooltipElText.appendChild(tooltipElCount);
+
+        tooltipEl.appendChild(tooltipElText);
+        this.tooltipList.append(tooltipEl);
+
+        return tooltipEl;
     }
 
     getProductCard() {
