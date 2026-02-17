@@ -57,6 +57,10 @@ export default function sendForm() {
             document.body.removeChild(overlay);
         });
 
+        overlay.addEventListener("click", () => {
+            document.body.removeChild(overlay);
+        });
+
         const iconCloseBtn = document.createElementNS("http://www.w3.org/2000/svg", "svg");
         iconCloseBtn.classList.add("main-menu__icon")
         iconCloseBtn.style.width = "24px";

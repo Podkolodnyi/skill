@@ -1,13 +1,13 @@
 import renderCards from "./renderCards.js";
 
 export default async function filterCards(cardsList) {
-    let Allcards = await cardsList;
+    let allcards = await cardsList;
     const filterForm = document.querySelector(".catalog-form")
 
     let lists = {}
 
     function getTypeList(type) {
-        let list = Allcards.filter((el) => {
+        let list = allcards.filter((el) => {
             if (el.type.includes(type, 0))
                 return el
         });
@@ -65,7 +65,7 @@ export default async function filterCards(cardsList) {
             }
         })
         let renderList = [];
-        Allcards.forEach((el) => {
+        allcards.forEach((el) => {
             if (allSelectedCards.includes(el.id)) {
                 renderList.push(el)
             }
@@ -88,9 +88,9 @@ export default async function filterCards(cardsList) {
             renderCards(renderList);
         } else {
             if (availability === "instock") {
-                renderCards(getListInStock(Allcards));
+                renderCards(getListInStock(allcards));
             }
-            renderCards(Allcards);
+            renderCards(allcards);
         }
     })
 

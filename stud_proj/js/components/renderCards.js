@@ -1,18 +1,19 @@
-import ProductCard from "./ProductCard.js";
+import productCard from "./productCard.js";
+import sortCards from "./sortCards.js"
 
 export default async function renderCards(cardsList) {
-    let cards = await cardsList;
+    const cards = await sortCards(await cardsList);
+
     const catalogList = document.querySelector(".catalog__list");
     const pagination = document.querySelector(".catalog__pagination");
 
-    function renderCardsList(list) {
+    async function renderCardsList(list) {
         catalogList.innerHTML = "";
         list.forEach((el) => {
-            let catalogItem = document.createElement("li");
+            const catalogItem = document.createElement("li");
             catalogItem.classList.add("catalog__item");
             catalogList.append(catalogItem);
-            let card = new ProductCard(el);
-            catalogItem.append(card.getProductCard());
+            catalogItem.append(productCard(el));
         })
     }
 
@@ -44,7 +45,6 @@ export default async function renderCards(cardsList) {
             })
         }
     }
-
     getPagination();
 
 }

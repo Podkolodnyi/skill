@@ -4,4 +4,9 @@ export default function activeBasket() {
     basketBtn.addEventListener("click", (e) => {
         basket.classList.toggle("basket--active");
     })
+    document.addEventListener("click", (e) => {
+        if (!basket.contains(e.target) && !basketBtn.contains(e.target)) {
+            basket.classList.remove("basket--active");
+        }
+    })
 }

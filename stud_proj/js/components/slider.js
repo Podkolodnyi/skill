@@ -1,20 +1,19 @@
-import DayProductCard from "./DayProductCard.js";
+import dayProductCard from "./dayProductCard.js";
 
 export default async function renderSlider(cards) {
     const cardsList = await cards;
-    let dayCardsList = cardsList.filter((el) => {
+    const dayCardsList = cardsList.filter((el) => {
         if (el.goodsOfDay) {
             return el
         }
     })
 
-    let dayProductList = document.querySelector(".day-products__list");
+    const dayProductList = document.querySelector(".day-products__list");
 
     dayCardsList.forEach((el) => {
-        let dayCardBox = document.createElement("li");
+        const dayCardBox = document.createElement("li");
         dayCardBox.classList.add("day-products__item", "swiper-slide");
-        let dayCard = new DayProductCard(el);
-        dayCardBox.append(dayCard.getProductCard());
+        dayCardBox.append(dayProductCard(el));
         dayProductList.append(dayCardBox);
         initSwiper();
     })
