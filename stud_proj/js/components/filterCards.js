@@ -84,15 +84,19 @@ export default async function filterCards(cardsList) {
         if (renderList.length > 0) {
             if (availability === "instock") {
                 renderCards(getListInStock(renderList));
+            } else {
+                renderCards(renderList);
             }
-            renderCards(renderList);
         } else {
             if (availability === "instock") {
                 renderCards(getListInStock(allcards));
+            } else {
+                renderCards(allcards);
             }
-            renderCards(allcards);
         }
     })
 
-
+    filterForm.addEventListener("reset", (e) => {
+        renderCards(allcards);
+    });
 }

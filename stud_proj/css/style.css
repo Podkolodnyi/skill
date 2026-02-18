@@ -1687,6 +1687,11 @@ button {
     left: 0;
     top: calc(50% - 3px); }
 
+.tippy-box[data-theme~='transparent'] .tippy-content {
+  background-color: white;
+  border: none;
+  padding: 0; }
+
 .day-products {
   padding: 70px 0 76px; }
   .day-products__top {

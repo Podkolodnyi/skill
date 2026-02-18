@@ -128,6 +128,8 @@ export default function ProductCard(card) {
             hideOnClick: true,
             delay: [100, 50],
             duration: [200, 150],
+            theme: 'transparent',
+            arrow: false,
         });
     }
 
