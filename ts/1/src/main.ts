@@ -1,74 +1,37 @@
-enum Priority {
-    LOW = 'low',
-    MEDIUM = 'medium',
-    HIGH = 'high'
-}
+class HanoiTower<T = number> {
+    private rods: { [key: string]: T[] } = {};
 
-
-enum Status {
-    ACTIVE = 'active',
-    INACTIVE = 'inactive',
-}
-
-type Todos = {
-    todo: string,
-    priority: Priority,
-}
-
-type User = {
-    name: string,
-    status: Status,
-    todos: Todos[],
-    changeStatus(newStatus: Status): void,
-    addTodo(todo: string, priority: Priority): void,
-    displayTodos(): void,
-    displayActiveTodos():void,
-
-}
-
-const user: User = {
-    name: '',
-    status: Status.ACTIVE,
-    todos: [],
-
-
-    changeStatus(newStatus: Status): void {
-        if (Object.values(Status).includes(newStatus)) {
-            this.status = newStatus;
-            console.log(`User status changed to ${newStatus}`);
-        } else {
-            console.error('Invalid status');
-        }
-    },
-
-
-    addTodo(todo: string, priority = Priority.MEDIUM): void {
-        this.todos.push({ todo, priority });
-        console.log(`Todo added: ${todo} (Priority: ${priority})`);
-    },
-
-
-    displayTodos() {
-        console.log(`Todos for ${this.name}:`);
-        this.todos.forEach(todo => console.log(`${todo.todo} (Priority: ${todo.priority})`));
-    },
-
-
-    displayActiveTodos() {
-        console.log(`Active Todos for ${this.name}:`);
-        this.todos
-            .filter(todo => todo.priority !== Priority.HIGH)
-            .forEach(todo => console.log(`${todo.todo} (Priority: ${todo.priority})`));
+    constructor(private fromRod: string = "First", private toRod: string = "Second", private auxRod: string = "Third") {
+        this.rods[fromRod] = [];
+        this.rods[toRod] = [];
+        this.rods[auxRod] = [];
     }
-};
 
+    // Метод для добавления дисков на начальный стержень
+    addDisks(disks: T[]): void {
+        this.rods[this.fromRod] = disks;
+    }
 
-user.name = 'John';
-user.changeStatus(Status.ACTIVE);
-user.addTodo('take delivery', Priority.HIGH);
-user.addTodo('stocktaking', Priority.HIGH);
-user.addTodo('collect the order');
-user.addTodo('throw out the trash', Priority.LOW);
-user.displayTodos();
-user.displayActiveTodos();
-user.changeStatus(Status.INACTIVE);
+    // Метод для решения задачи
+    solve(): void {
+        const numberOfDisks = this.rods[this.fromRod].length;
+        this.move(numberOfDisks, this.fromRod, this.toRod, this.auxRod);
+    }
+
+    // Внутренний рекурсивный метод для перемещения дисков
+    private move(n: number, from: string, to: string, aux: string): void {
+        if (n === 0) {
+            return;
+        }
+
+        this.move(n - 1, from, aux, to);
+
+        const disk = this.rods[from].pop();
+        if (disk !== undefined) {
+            this.rods[to].push(disk);
+            console.log(`Переместить диск ${disk} с ${from} на ${to}`);
+        }
+
+        this.move(n - 1, aux, to, from);
+    }
+}
